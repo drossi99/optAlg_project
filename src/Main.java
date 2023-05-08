@@ -1,3 +1,5 @@
+import gurobi.GRBException;
+
 import java.util.*;
 import java.io.IOException;
 import java.io.FileNotFoundException;
@@ -7,14 +9,14 @@ public class Main{
     /*static ArrayList<Esame> esami = null;
     static int T;
     static ArrayList<Studente> studenti = null;*/
-    public static void main(String []args)  throws FileNotFoundException, IOException{
+    public static void main(String []args) throws FileNotFoundException, IOException, GRBException {
         /*esami = LetturaFile.leggiExm(".\\instance\\test.exm");
         T = LetturaFile.leggiSlo(".\\instance\\test.slo");
         studenti = LetturaFile.leggiStu(".\\instance\\test.stu", esami);*/
 
         //System.out.println(T);
         
-        Istanza istanza = new Istanza(".\\instance\\test.exm", ".\\instance\\test.slo", ".\\instance\\test.stu");
+        Istanza istanza = new Istanza("src/instance/test.exm", "src/instance/test.slo", "src/instance/test.stu");
         ETPmodel model = new ETPmodel(istanza, 5);
 
         model.buildModel();

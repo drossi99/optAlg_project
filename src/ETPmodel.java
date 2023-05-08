@@ -1,8 +1,4 @@
-import gurobi.GRBEnv;
-import gurobi.GRBLinExp;
-import gurobi.GRBModel;
-import gurobi.GRBVar;
-import gurobi.GRBException;
+import gurobi.*;
 
 import java.util.ArrayList;
 
@@ -12,14 +8,14 @@ public class ETPmodel {
     private Istanza istanza;
     private int iSlot;
     private GRBVar[][] vettoreY;
-    private GRBVar[][] vettoreU;
+    private GRBVar[][][] vettoreU;
 
     public ETPmodel(Istanza istanza, int iSlot) { // metodo costruttore
         this.istanza = istanza;
         this.iSlot = iSlot;
     }
 
-    public void buildModel() {
+    public void buildModel() throws GRBException {
         env = new GRBEnv();
         setParameters();
         model = new GRBModel(env);
@@ -48,7 +44,7 @@ public class ETPmodel {
         // env.set(IntParam.PoolSearchMode, 2);
     }
 
-    public static GRBVar[][] dichiaraVariabiliY(ArrayList<Esame> listaEsami, int T) {
+    public GRBVar[][] dichiaraVariabiliY(ArrayList<Esame> listaEsami, int T) throws GRBException {
         GRBVar[][] vettoreX = new GRBVar[listaEsami.size()][T];
         for (int i = 0; i < listaEsami.size(); i++) {
             for (int j = 0; j < T; j++) {
@@ -58,7 +54,7 @@ public class ETPmodel {
         return vettoreX;
     }
 
-    public static GRBVar[][] dichiaraVariabiliU(ArrayList<Esame> listaEsami, int[][] matConflitti, int iSlot) {
+    public GRBVar[][][] dichiaraVariabiliU(ArrayList<Esame> listaEsami, int[][] matConflitti, int iSlot) throws GRBException {
         GRBVar[][][] vettoreU = new GRBVar[listaEsami.size()][listaEsami.size()][iSlot];
 
         for (int i = 0; i < listaEsami.size(); i++) {
@@ -95,14 +91,14 @@ public class ETPmodel {
 
     public double getObjValue() { // getter valore funzione obiettivo
         try {
-            return model.get(DoubleAttr.ObjVal);
+            return model.get(GRB.DoubleAttr.ObjVal);
         } catch (GRBException e) {
             e.printStackTrace();
         }
         return 0;
     }
 
-    public void aggiungiVincolo1(ArrayList<Esame> listaEsami, int T) {
+    public void aggiungiVincolo1(ArrayList<Esame> listaEsami, int T) throws GRBException {
 
         for (int i = 0; i < listaEsami.size(); i++) {
             GRBLinExpr exprVincolo1 = new GRBLinExpr();
@@ -113,7 +109,7 @@ public class ETPmodel {
         }
     }
 
-    public void aggiungiVincolo2(ArrayList<Esame> listaEsami, int T, int[][] matConflitti) {
+    public void aggiungiVincolo2(ArrayList<Esame> listaEsami, int T, int[][] matConflitti) throws GRBException {
         for (int i = 0; i < listaEsami.size(); i++) {
             for (int j = 0; j < listaEsami.size(); j++) {
                 if (matConflitti[i][j] > 0) {
@@ -128,7 +124,7 @@ public class ETPmodel {
         }
     }
 
-    public void aggiungiVincolo3(ArrayList<Esame> listaEsami, int iSlot, int T, int[][] matConflitti) {
+    public void aggiungiVincolo3(ArrayList<Esame> listaEsami, int iSlot, int T, int[][] matConflitti) throws GRBException {
         for (int i = 0; i < listaEsami.size(); i++) {
             for (int j = 0; j < listaEsami.size(); j++) {
                 if (matConflitti[i][j] > 0) {
@@ -148,14 +144,16 @@ public class ETPmodel {
         }
     }
 
-    public void funzioneObiettivo(int[][] matConflitti, int iSlot, int totStudenti){
+    public void funzioneObiettivo(int[][] matConflitti, int iSlot, int totStudenti) throws GRBException {
         GRBLinExpr funObjExpr = new GRBLinExpr();
 
+        for (GRBVar var : this.model.getVars()) {
+            System.out.println("vriabile: " + var.get(GRB.StringAttr.VarName));
+        }
         for (Esame e1 : istanza.getEsami()) {
             for (Esame e2 : istanza.getEsami()) {
                 if (matConflitti[e1.getId()][e2.getId()] > 0) {
                     for (int i = 1; i < this.iSlot + 1; i++) {
-                    
                         int fattoreMoltiplicativo = (2^(iSlot-i)*matConflitti[e1.getId()][e2.getId()])/ totStudenti;
                         funObjExpr.addTerm(fattoreMoltiplicativo, model.getVarByName("u_" + e1.getId() + "," + e2.getId() + "," + i));
                     }
