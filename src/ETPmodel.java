@@ -16,7 +16,7 @@ public class ETPmodel {
     }
 
     public void buildModel() throws GRBException {
-        env = new GRBEnv();
+        env = new GRBEnv("modello.log");
         setParameters();
         model = new GRBModel(env);
 
@@ -45,13 +45,13 @@ public class ETPmodel {
     }
 
     public GRBVar[][] dichiaraVariabiliY(ArrayList<Esame> listaEsami, int T) throws GRBException {
-        GRBVar[][] vettoreX = new GRBVar[listaEsami.size()][T];
+        GRBVar[][] vettoreY = new GRBVar[listaEsami.size()][T];
         for (int i = 0; i < listaEsami.size(); i++) {
             for (int j = 0; j < T; j++) {
-                vettoreX[i][j] = model.addVar(0, 1, 0, GRB.BINARY, "y_" + i + "," + j);
+                vettoreY[i][j] = model.addVar(0, 1, 0, GRB.BINARY, "y_" + i + "," + j);
             }
         }
-        return vettoreX;
+        return vettoreY;
     }
 
     public GRBVar[][][] dichiaraVariabiliU(ArrayList<Esame> listaEsami, int[][] matConflitti, int iSlot) throws GRBException {
@@ -61,8 +61,10 @@ public class ETPmodel {
             for (int j = 0; j < listaEsami.size(); j++) {
                 if (matConflitti[i][j] > 0) {
                     for (int k = 0; k < iSlot; k++) {
+                        String nomeVar = "u_" + (i+1) + "," + (j+1) + "," + (k+1);
+                        System.out.println("nomeVar: " + nomeVar);
                         vettoreU[i][j][k] = model.addVar(0, GRB.INFINITY, 0, GRB.CONTINUOUS,
-                                "u_" + i + "," + j + "," + k);
+                                nomeVar);
                     }
                 }
             }
@@ -103,9 +105,11 @@ public class ETPmodel {
         for (int i = 0; i < listaEsami.size(); i++) {
             GRBLinExpr exprVincolo1 = new GRBLinExpr();
             for (int j = 0; j < T; j++) {
-                exprVincolo1.addTerm(1, model.getVarByName("y_" + i + "," + j));
+                //exprVincolo1.addTerm(1, model.getVarByName("y_" + i + "," + j));
+                exprVincolo1.addTerm(1, vettoreY[i][j]);
             }
             model.addConstr(exprVincolo1, GRB.EQUAL, 1, "Vincolo1_" + "e" + i);
+
         }
     }
 
@@ -115,8 +119,10 @@ public class ETPmodel {
                 if (matConflitti[i][j] > 0) {
                     for (int t = 0; t < T; t++) {
                         GRBLinExpr exprVincolo2 = new GRBLinExpr();
-                        exprVincolo2.addTerm(1, model.getVarByName("y_" + i + "," + t));
-                        exprVincolo2.addTerm(1, model.getVarByName("y_" + j + "," + t));
+                        //exprVincolo2.addTerm(1, model.getVarByName("y_" + i + "," + t));
+                        //exprVincolo2.addTerm(1, model.getVarByName("y_" + j + "," + t));
+                        exprVincolo2.addTerm(1, vettoreY[i][t]);
+                        exprVincolo2.addTerm(1, vettoreY[j][t]);
                         model.addConstr(exprVincolo2, GRB.LESS_EQUAL, 1, "Vincolo2_" + "e" + i + ",e" + j + ",t" + t);
                     }
                 }
@@ -131,12 +137,15 @@ public class ETPmodel {
                     for (int k = 0; k < iSlot; k++) {
                         for (int t = 0; t < T - k; t++) {
                             GRBLinExpr exprVincolo3 = new GRBLinExpr();
-                            exprVincolo3.addTerm(1, model.getVarByName("y_" + i + "," + t));
-                            exprVincolo3.addTerm(1, model.getVarByName("y_" + j + "," + (t + i)));
-                            exprVincolo3.addTerm(-1, model.getVarByName("u_" + i + "," + j + "," + k));
+                            //exprVincolo3.addTerm(1, model.getVarByName("y_" + i + "," + t));
+                            //exprVincolo3.addTerm(1, model.getVarByName("y_" + j + "," + (t + i)));
+                            //exprVincolo3.addTerm(-1, model.getVarByName("u_" + i + "," + j + "," + k));
 
+                            exprVincolo3.addTerm(1, vettoreY[i][t]);
+                            exprVincolo3.addTerm(1, vettoreY[j][t+k]);
+                            exprVincolo3.addTerm(1, vettoreU[i][j][k]);
                             model.addConstr(exprVincolo3, GRB.LESS_EQUAL, 1,
-                                    "Vincolo2_" + "e" + i + ",e" + j + ",t" + t + ",k" + k);
+                                    "Vincolo3_" + "e" + i + ",e" + j + ",t" + t + ",k" + k);
                         }
                     }
                 }
@@ -152,16 +161,24 @@ public class ETPmodel {
         }
         for (Esame e1 : istanza.getEsami()) {
             for (Esame e2 : istanza.getEsami()) {
-                if (matConflitti[e1.getId()][e2.getId()] > 0) {
-                    for (int i = 1; i < this.iSlot + 1; i++) {
-                        int fattoreMoltiplicativo = (2^(iSlot-i)*matConflitti[e1.getId()][e2.getId()])/ totStudenti;
-                        funObjExpr.addTerm(fattoreMoltiplicativo, model.getVarByName("u_" + e1.getId() + "," + e2.getId() + "," + i));
+                if (matConflitti[e1.getId()-1][e2.getId()-1] > 0) {
+                    for (int i = 0; i < this.iSlot; i++) {
+                        double fattoreMoltiplicativo = ((Math.pow(2, iSlot-i))*matConflitti[e1.getId()-1][e2.getId()-1])/ totStudenti;
+                        funObjExpr.addTerm(fattoreMoltiplicativo, vettoreU[e1.getId()-1][e2.getId()-1][i]);
+
+                        //funObjExpr.addTerm(fattoreMoltiplicativo, model.getVarByName("u_" + e1.getId() + "," + e2.getId() + "," + i));
+
                     }
                 }
             }
         }
 
         model.setObjective(funObjExpr, GRB.MINIMIZE);
+    }
+
+
+    public GRBModel getModel() {
+        return model;
     }
 
 }

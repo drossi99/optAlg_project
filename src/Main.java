@@ -16,10 +16,11 @@ public class Main{
 
         //System.out.println(T);
         
-        Istanza istanza = new Istanza("src/instance/test.exm", "src/instance/test.slo", "src/instance/test.stu");
+        Istanza istanza = new Istanza("src/instance/instance01.exm", "src/instance/instance01.slo", "src/instance/instance01.stu");
         ETPmodel model = new ETPmodel(istanza, 5);
 
         model.buildModel();
+        model.getModel().write("modello.lp");
 		model.solve();
 
         //esami.forEach((e) -> System.out.println(e.getId() + " " + e.getUtenti_Iscritti()));
