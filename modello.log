@@ -354,3 +354,728 @@ Solution count 1: 0
 
 Optimal solution found (tolerance 1.00e-04)
 Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:10:37
+
+Set parameter Username
+Set parameter MemLimit to value 3
+Academic license - for non-commercial use only - expires 2024-05-02
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 90239 rows, 8432 columns and 254882 nonzeros
+Model fingerprint: 0xc0cf3842
+Variable types: 6625 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-03, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 86354 rows and 7644 columns (presolve time = 5s) ...
+Presolve removed 86354 rows and 7644 columns
+Presolve time: 5.03s
+Presolved: 3885 rows, 788 columns, 43192 nonzeros
+Variable types: 0 continuous, 788 integer (788 binary)
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 5.15 seconds (2.01 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:15:58
+
+Set parameter Username
+Set parameter MemLimit to value 3
+Academic license - for non-commercial use only - expires 2024-05-02
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 82 rows, 39 columns and 240 nonzeros
+Model fingerprint: 0xdd787315
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:17:30
+
+Set parameter Username
+Set parameter MemLimit to value 3
+Academic license - for non-commercial use only - expires 2024-05-02
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 82 rows, 39 columns and 240 nonzeros
+Model fingerprint: 0x37c43762
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:18:17
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 82 rows, 39 columns and 240 nonzeros
+Model fingerprint: 0x37c43762
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:18:35
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 82 rows, 39 columns and 240 nonzeros
+Model fingerprint: 0x37c43762
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:46:48
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:47:43
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 64 rows, 39 columns and 186 nonzeros
+Model fingerprint: 0xc939596c
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:49:24
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:51:35
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:52:28
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 15:55:01
+
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-05-02
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 82 rows, 39 columns and 240 nonzeros
+Model fingerprint: 0x37c43762
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:00:24
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 82 rows, 39 columns and 240 nonzeros
+Model fingerprint: 0x37c43762
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:02:11
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:02:33
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 67 rows, 39 columns and 195 nonzeros
+Model fingerprint: 0x42425418
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:02:45
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 82 rows, 39 columns and 240 nonzeros
+Model fingerprint: 0x37c43762
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:07:20
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:08:06
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 64 rows, 39 columns and 186 nonzeros
+Model fingerprint: 0x6d030b66
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:11:31
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 67 rows, 39 columns and 195 nonzeros
+Model fingerprint: 0x92e780d1
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:19:26
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 67 rows, 39 columns and 195 nonzeros
+Model fingerprint: 0x92e780d1
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:32:00
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:32:10
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:35:29
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 67 rows, 39 columns and 195 nonzeros
+Model fingerprint: 0x92e780d1
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:39:21
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 67 rows, 39 columns and 195 nonzeros
+Model fingerprint: 0x92e780d1
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:41:28
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 67 rows, 39 columns and 195 nonzeros
+Model fingerprint: 0x92e780d1
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:44:32
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 67 rows, 39 columns and 195 nonzeros
+Model fingerprint: 0x92e780d1
+Variable types: 15 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:52:50
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x287f5ea2
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 6.7500000
+Presolve removed 57 rows and 12 columns
+Presolve time: 0.02s
+Presolved: 73 rows, 42 columns, 451 nonzeros
+Variable types: 0 continuous, 42 integer (42 binary)
+Root relaxation presolved: 73 rows, 42 columns, 451 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 8 iterations, 0.02 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    9    6.75000    0.00000   100%     -    0s
+     0     0    0.00000    0    9    6.75000    0.00000   100%     -    0s
+     0     0    0.00000    0    9    6.75000    0.00000   100%     -    0s
+     0     0    0.45833    0   21    6.75000    0.45833  93.2%     -    0s
+     0     0    0.59615    0   22    6.75000    0.59615  91.2%     -    0s
+     0     0    0.61111    0   22    6.75000    0.61111  90.9%     -    0s
+     0     0    1.00721    0   25    6.75000    1.00721  85.1%     -    0s
+     0     0    1.07768    0   24    6.75000    1.07768  84.0%     -    0s
+     0     0    1.08235    0   25    6.75000    1.08235  84.0%     -    0s
+     0     0    1.08456    0   26    6.75000    1.08456  83.9%     -    0s
+     0     0    1.43277    0   29    6.75000    1.43277  78.8%     -    0s
+     0     0    1.47760    0   27    6.75000    1.47760  78.1%     -    0s
+     0     0    1.48810    0   27    6.75000    1.48810  78.0%     -    0s
+     0     0    1.49148    0   27    6.75000    1.49148  77.9%     -    0s
+     0     0    1.49470    0   28    6.75000    1.49470  77.9%     -    0s
+     0     0    1.57143    0   25    6.75000    1.57143  76.7%     -    0s
+     0     0    1.65264    0   27    6.75000    1.65264  75.5%     -    0s
+     0     0    1.68433    0   31    6.75000    1.68433  75.0%     -    0s
+     0     0    1.69551    0   28    6.75000    1.69551  74.9%     -    0s
+     0     0    1.71014    0   27    6.75000    1.71014  74.7%     -    0s
+     0     0    1.79464    0   28    6.75000    1.79464  73.4%     -    0s
+     0     0    1.81439    0   28    6.75000    1.81439  73.1%     -    0s
+     0     0    2.03750    0   27    6.75000    2.03750  69.8%     -    0s
+     0     0    2.10009    0   31    6.75000    2.10009  68.9%     -    0s
+     0     0    2.11000    0   33    6.75000    2.11000  68.7%     -    0s
+     0     0    2.11096    0   32    6.75000    2.11096  68.7%     -    0s
+     0     0    2.31658    0   31    6.75000    2.31658  65.7%     -    0s
+     0     0    2.37713    0   28    6.75000    2.37713  64.8%     -    0s
+     0     0    2.38173    0   29    6.75000    2.38173  64.7%     -    0s
+     0     0    2.48358    0   30    6.75000    2.48358  63.2%     -    0s
+     0     0    2.49932    0   32    6.75000    2.49932  63.0%     -    0s
+     0     0    2.49933    0   32    6.75000    2.49933  63.0%     -    0s
+     0     0    2.60771    0   33    6.75000    2.60771  61.4%     -    0s
+     0     0    2.62194    0   31    6.75000    2.62194  61.2%     -    0s
+     0     0    2.63820    0   33    6.75000    2.63820  60.9%     -    0s
+     0     0    2.64091    0   33    6.75000    2.64091  60.9%     -    0s
+     0     0    2.70129    0   31    6.75000    2.70129  60.0%     -    0s
+     0     0    2.70195    0   34    6.75000    2.70195  60.0%     -    0s
+     0     0    2.74419    0   31    6.75000    2.74419  59.3%     -    0s
+     0     0    2.75022    0   34    6.75000    2.75022  59.3%     -    0s
+     0     0    2.78659    0   31    6.75000    2.78659  58.7%     -    0s
+     0     0    2.79150    0   32    6.75000    2.79150  58.6%     -    0s
+     0     0    2.79240    0   33    6.75000    2.79240  58.6%     -    0s
+     0     0    2.80269    0   33    6.75000    2.80269  58.5%     -    0s
+     0     0    2.80333    0   33    6.75000    2.80333  58.5%     -    0s
+     0     0    2.80842    0   32    6.75000    2.80842  58.4%     -    0s
+     0     2    2.82161    0   32    6.75000    2.82161  58.2%     -    0s
+
+Cutting planes:
+  MIR: 21
+  Zero half: 4
+
+Explored 15 nodes (617 simplex iterations) in 0.36 seconds (0.05 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 1: 6.75 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 6.750000000000e+00, best bound 6.750000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 16:55:44
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xd458728d
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-01, 1e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 6.7500000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.02s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    6.75000    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.06 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 6.75 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 17:03:03
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x19e2d594
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 3.3750000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.01s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    3.37500    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.04 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 3.375 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
