@@ -23,8 +23,8 @@ public class HeuristicSolver {
 
             min_t=-1;
             for(int j=0; j<adiacenti.size(); j++) {
-                for(int t=1; t<modello.getIstanza().getLunghezzaExaminationPeriod(); t++){
-                    if(modello.getVettoreY()[adiacenti.get(j)-1][t-1].get(GRB.DoubleAttr.Start)==1){
+                for(int t=0; t<modello.getIstanza().getLunghezzaExaminationPeriod(); t++){
+                    if(modello.getVettoreY()[adiacenti.get(j)-1][t].get(GRB.DoubleAttr.Start)==1){
                         if(t>min_t){
                             min_t=t;
                         }
