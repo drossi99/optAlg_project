@@ -1079,3 +1079,558 @@ Solution count 2: 0 3.375
 
 Optimal solution found (tolerance 1.00e-10)
 Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started gio 11 mag 2023, 17:06:15
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x1bde5e96
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 101929 rows and 6928 columns (presolve time = 19s) ...
+Presolve removed 101929 rows and 6928 columns
+Presolve time: 19.45s
+Presolved: 65160 rows, 8129 columns, 269553 nonzeros
+Variable types: 0 continuous, 8129 integer (8129 binary)
+Found heuristic solution: objective 210.2176759
+Found heuristic solution: objective 209.8707038
+Root relaxation presolved: 8129 rows, 73289 columns, 277682 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0      handle free variables                         20s
+    9503   -0.0000000e+00   0.000000e+00   0.000000e+00     22s
+    9503   -0.0000000e+00   0.000000e+00   0.000000e+00     22s
+    9503    0.0000000e+00   0.000000e+00   0.000000e+00     22s
+
+Root relaxation: objective 0.000000e+00, 9503 iterations, 2.66 seconds (1.31 work units)
+Total elapsed time = 26.95s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  391  209.87070    0.00000   100%     -   27s
+     0     0    0.00000    0  484  209.87070    0.00000   100%     -   30s
+H    0     0                     179.2258592    0.00000   100%     -   30s
+     0     0    0.00000    0  479  179.22586    0.00000   100%     -   30s
+     0     0    0.00000    0  488  179.22586    0.00000   100%     -   38s
+     0     0    0.00000    0  479  179.22586    0.00000   100%     -   39s
+     0     0    0.00000    0  319  179.22586    0.00000   100%     -   49s
+H    0     0                     155.3797054    0.00000   100%     -   49s
+     0     0    0.00000    0  315  155.37971    0.00000   100%     -   49s
+     0     0    0.00000    0  334  155.37971    0.00000   100%     -   59s
+     0     0    0.00000    0  333  155.37971    0.00000   100%     -   59s
+     0     0    0.00000    0  411  155.37971    0.00000   100%     -   66s
+H    0     0                     149.6432079    0.00000   100%     -   66s
+     0     0    0.00000    0  408  149.64321    0.00000   100%     -   67s
+     0     0    0.00000    0  321  149.64321    0.00000   100%     -   76s
+     0     0    0.00000    0  385  149.64321    0.00000   100%     -   77s
+     0     0    0.00000    0  371  149.64321    0.00000   100%     -   86s
+     0     0    0.00000    0  371  149.64321    0.00000   100%     -   90s
+H    0     0                      40.7528642    0.00000   100%     -   93s
+H    0     0                      40.7135843    0.00000   100%     -   97s
+H    0     0                      13.4320786    0.00000   100%     -  110s
+H    3     1                      12.5433715    0.00000   100%   874  122s
+     3     1    0.00000    0  116   12.54337    0.00000   100%   0.0  126s
+     3     1    0.00000    0  218   12.54337    0.00000   100%   0.0  131s
+     3     1    0.00000    0  209   12.54337    0.00000   100%   0.0  136s
+     3     1    0.00000    0  220   12.54337    0.00000   100%   0.0  143s
+     3     1    0.00000    0  231   12.54337    0.00000   100%   0.0  145s
+     3     1    0.00000    0  219   12.54337    0.00000   100%   0.0  152s
+     3     1    0.00000    0  229   12.54337    0.00000   100%   0.0  157s
+     3     1    0.00000    0  229   12.54337    0.00000   100%   0.0  160s
+     4     5    0.00000   11  181   12.54337    0.00000   100% 11673  167s
+    10    10    0.00000   13  234   12.54337    0.00000   100%  4981  170s
+    16    16    0.00000   15  212   12.54337    0.00000   100%  3649  176s
+    28    30    0.23451   18  239   12.54337    0.00000   100%  2454  181s
+    32    38    0.00000   19  214   12.54337    0.00000   100%  2314  185s
+    49    64    0.00000   22  197   12.54337    0.00000   100%  1763  198s
+    66   114    0.00000   24  216   12.54337    0.00000   100%  1576  208s
+   116   170    0.03320   26  222   12.54337    0.00000   100%  1033  213s
+   172   213    0.00000   28  221   12.54337    0.00000   100%   721  257s
+H  195   213                      12.1227496    0.00000   100%   638  257s
+   237   226    0.00000   29  155   12.12275    0.00000   100%   539  266s
+   252   258    0.00000   33  181   12.12275    0.00000   100%   564  277s
+H  279   173                       6.2193126    0.00000   100%   574  277s
+   284   250    0.00000   37  186    6.21931    0.00000   100%   579  298s
+   361   399    0.25777   56  129    6.21931    0.00000   100%   558  321s
+   558   483    0.23377   46  161    6.21931    0.00000   100%   453  337s
+   642   562    0.70213   57  222    6.21931    0.00000   100%   469  352s
+   740   564    1.95057   75  116    6.21931    0.00000   100%   454  358s
+   742   566    0.00000   22  227    6.21931    0.00000   100%   453  361s
+   743   566    1.76759   60  199    6.21931    0.00000   100%   452  366s
+   745   568    2.74945   55  225    6.21931    0.00000   100%   451  373s
+   746   568    0.18903   39  223    6.21931    0.00000   100%   451  375s
+   747   569    1.94203   74  195    6.21931    0.00000   100%   450  381s
+   749   570    3.94517   68  211    6.21931    0.00000   100%   449  388s
+   751   572    1.06009   33  186    6.21931    0.00000   100%   448  395s
+   753   573    1.72395   73  201    6.21931    0.00000   100%   446  403s
+   755   574    1.58920   65  211    6.21931    0.00000   100%   445  410s
+   757   576    0.00000   17  211    6.21931    0.00000   100%   444  419s
+   758   576    1.19224   28  213    6.21931    0.00000   100%   444  420s
+   759   577    0.21800   17  202    6.21931    0.00000   100%   443  427s
+   761   578    0.47627   57  202    6.21931    0.00000   100%   442  431s
+   762   582    0.00000   21  190    6.21931    0.00000   100%   532  441s
+   766   585    0.23568   22  198    6.21931    0.00000   100%   541  446s
+   772   589    0.00000   24  188    6.21931    0.00000   100%   550  450s
+   776   593    0.00000   25  183    6.21931    0.00000   100%   554  458s
+   783   597    0.06001   26  217    6.21931    0.00000   100%   563  461s
+   789   600    0.00000   27  204    6.21931    0.00000   100%   565  473s
+   791   604    0.00000   28  202    6.21931    0.00000   100%   566  476s
+   800   610    0.00000   29  196    6.21931    0.00000   100%   575  482s
+   810   616    0.00000   32  165    6.21931    0.00000   100%   582  487s
+   814   620    0.00000   33  188    6.21931    0.00000   100%   586  490s
+   825   629    0.03355   35  185    6.21931    0.00000   100%   592  497s
+   832   634    0.05278   37  184    6.21931    0.00000   100%   592  500s
+   844   641    0.05278   40  183    6.21931    0.00000   100%   596  505s
+   850   647    0.05278   42  181    6.21931    0.00000   100%   600  510s
+   858   654    0.05278   44  182    6.21931    0.00000   100%   600  515s
+   878   665    0.05611   50  227    6.21931    0.00000   100%   599  521s
+   886   674    0.06247   52  205    6.21931    0.00000   100%   600  525s
+   905   686    0.05706   57  202    6.21931    0.00000   100%   604  534s
+   916   691    0.06566   59  269    6.21931    0.00000   100%   604  538s
+   924   695    0.06614   61  284    6.21931    0.00000   100%   606  542s
+   931   704    0.06614   62  283    6.21931    0.00000   100%   607  546s
+   942   712    0.06631   64  277    6.21931    0.00000   100%   608  551s
+   954   722    0.06741   67  272    6.21931    0.00000   100%   610  556s
+   968   727    0.63279   72  302    6.21931    0.00000   100%   612  561s
+   978   734    0.07293   74  288    6.21931    0.00000   100%   614  566s
+   988   742    0.07463   76  220    6.21931    0.00000   100%   620  572s
+   999   751    0.35816   77  228    6.21931    0.00000   100%   624  577s
+  1012   757    0.08137   80  264    6.21931    0.00000   100%   625  582s
+  1022   769    0.14379   82  264    6.21931    0.00000   100%   628  588s
+  1038   778    0.76631   85  252    6.21931    0.00000   100%   631  593s
+  1052   787    0.16507   88  263    6.21931    0.00000   100%   631  599s
+  1066   798    0.18853   90  278    6.21931    0.00000   100%   634  606s
+  1081   809    1.59154   92  320    6.21931    0.00000   100%   638  614s
+  1097   817    0.27049   95  281    6.21931    0.00000   100%   642  621s
+  1111   827    1.16845   98  350    6.21931    0.00000   100%   651  627s
+  1125   842    1.38809  100  337    6.21931    0.00000   100%   654  634s
+  1145   857    1.23382  103  365    6.21931    0.00000   100%   653  641s
+  1167   874    1.44645  107  425    6.21931    0.00000   100%   647  651s
+  1191   887    1.46926  111  496    6.21931    0.00000   100%   644  659s
+  1212   905    1.53180  115  489    6.21931    0.00000   100%   643  668s
+  1237   928    2.14448  119  350    6.21931    0.00000   100%   642  676s
+  1268   949    2.26579  124  384    6.21931    0.00000   100%   637  684s
+  1300   965    1.84613  134  517    6.21931    0.00000   100%   632  698s
+  1346   966    2.09861  139  523    6.21931    0.00000   100%   624  758s
+H 1362   478                       0.0000000    0.00000  0.00%   619  759s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 2
+  Flow cover: 96
+  Zero half: 4
+
+Explored 1363 nodes (930745 simplex iterations) in 760.59 seconds (974.90 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 10: 0 6.21931 12.1227 ... 179.226
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 22:01:27
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:08:24
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:10:42
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:15:43
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:16:27
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:18:04
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x5e7b5a4a
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint Vincolo2_e1,e2,t0 by 1.000000000
+
+Found heuristic solution: objective 3.3750000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.01s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    3.37500    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.04 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 3.375 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:20:39
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xa5eaa0a5
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint Vincolo2_e0,e1,t0 by 1.000000000
+
+Found heuristic solution: objective 3.3750000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.01s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    3.37500    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.04 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 3.375 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:23:31
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xa5eaa0a5
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint Vincolo2_e0,e1,t0 by 1.000000000
+
+Found heuristic solution: objective 3.3750000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.02s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    3.37500    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.06 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 3.375 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:28:03
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:33:46
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:37:41
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:38:12
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:38:39
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:42:16
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xa5eaa0a5
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint Vincolo2_e0,e1,t0 by 1.000000000
+
+Found heuristic solution: objective 3.3750000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.01s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    3.37500    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.04 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 3.375 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:43:05
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:43:24
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:46:41
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xa5eaa0a5
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint Vincolo2_e0,e1,t0 by 1.000000000
+
+Found heuristic solution: objective 3.3750000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.01s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    3.37500    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.07 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 3.375 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (linux64, Java) logging started mar 16 mag 2023, 23:47:34
+
+Set parameter Username
+Set parameter MemLimit to value 2
+Academic license - for non-commercial use only - expires 2024-05-02
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (linux64)
+
+CPU model: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz, instruction set [SSE2|AVX]
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xa5eaa0a5
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+User MIP start did not produce a new incumbent solution
+User MIP start violates constraint Vincolo2_e0,e1,t0 by 1.000000000
+
+Found heuristic solution: objective 3.3750000
+Presolve removed 87 rows and 26 columns
+Presolve time: 0.01s
+Presolved: 43 rows, 28 columns, 199 nonzeros
+Variable types: 0 continuous, 28 integer (28 binary)
+Root relaxation presolved: 43 rows, 28 columns, 199 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 3 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    6    3.37500    0.00000   100%     -    0s
+H    0     0                       0.0000000    0.00000  0.00%     -    0s
+     0     0    0.00000    0    6    0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (3 simplex iterations) in 0.04 seconds (0.00 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0 3.375 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%

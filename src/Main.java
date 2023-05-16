@@ -21,10 +21,11 @@ public class Main{
 
         model.buildModel();
         model.getModel().write("modello.lp");
-		model.solve();
+		//model.solve();
+        model.heurSolve();
 
-		model.stampaVariabiliY(istanza.getEsami(),istanza.getLunghezzaExaminationPeriod());
-		model.stampaVariabiliU(istanza.getEsami(), istanza.getConflitti(), 5);
+		//model.stampaVariabiliY(istanza.getEsami(),istanza.getLunghezzaExaminationPeriod());
+		//model.stampaVariabiliU(istanza.getEsami(), istanza.getConflitti(), 5);
 
 
 

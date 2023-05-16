@@ -10,6 +10,22 @@ public class ETPmodel {
     private GRBVar[][] vettoreY;
     private GRBVar[][][] vettoreU;
 
+    public GRBEnv getEnv() {
+        return env;
+    }
+
+    public Istanza getIstanza() {
+        return istanza;
+    }
+
+    public int getiSlot() {
+        return iSlot;
+    }
+
+    public GRBVar[][][] getVettoreU() {
+        return vettoreU;
+    }
+
     public ETPmodel(Istanza istanza, int iSlot) { // metodo costruttore
         this.istanza = istanza;
         this.iSlot = iSlot;
@@ -101,6 +117,17 @@ public class ETPmodel {
         } catch (GRBException e) {
             e.printStackTrace();
         }
+    }
+
+    public void heurSolve() throws GRBException {
+        HeuristicSolver.calcolaSoluzioneIniziale(this);
+        try {
+            model.optimize();
+        } catch (GRBException e) {
+            e.printStackTrace();
+        }
+        this.stampaVariabiliY(this.getIstanza().getEsami(), this.getIstanza().getLunghezzaExaminationPeriod());
+
     }
 
     public void dispose() {
@@ -201,6 +228,9 @@ public class ETPmodel {
         model.setObjective(funObjExpr, GRB.MINIMIZE);
     }
 
+    public GRBVar[][] getVettoreY(){
+        return vettoreY;
+    }
 
     public GRBModel getModel() {
         return model;
