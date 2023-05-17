@@ -12,6 +12,7 @@ public class Utility {
 
                 s1.retainAll(esami.get(j).getStudenti());
                 n[i][j]=s1.size();
+                n[j][i]=s1.size();
             }
         }
      
