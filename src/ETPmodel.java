@@ -76,7 +76,9 @@ public class ETPmodel {
     public void stampaVariabiliY(ArrayList<Esame> listaEsami, int T)throws GRBException {
         for (int i = 0; i < listaEsami.size(); i++) {
                     for (int j = 0; j < T; j++) {
-                        System.out.println(vettoreY[i][j].get(GRB.StringAttr.VarName)+ " " +vettoreY[i][j].get(GRB.DoubleAttr.X));
+                        if(vettoreY[i][j].get(GRB.DoubleAttr.X)==1) {
+                            System.out.println(vettoreY[i][j].get(GRB.StringAttr.VarName)+ " " +vettoreY[i][j].get(GRB.DoubleAttr.X));
+                        }
                     }
         }
     }
@@ -89,7 +91,7 @@ public class ETPmodel {
                 if (matConflitti[i][j] > 0) {
                     for (int k = 0; k < iSlot; k++) {
                         String nomeVar = "u_" + (i+1) + "," + (j+1) + "," + (k+1);
-                        System.out.println("nomeVar: " + nomeVar);
+                        //System.out.println("nomeVar: " + nomeVar);
                         vettoreU[i][j][k] = model.addVar(0, GRB.INFINITY, 0, GRB.CONTINUOUS,
                                 nomeVar);
                     }
@@ -104,7 +106,9 @@ public class ETPmodel {
                     for (int j = 0; j < listaEsami.size(); j++) {
                         if (matConflitti[i][j] > 0) {
                             for (int k = 0; k < iSlot; k++) {
-                                System.out.println(vettoreU[i][j][k].get(GRB.StringAttr.VarName)+ " " +vettoreU[i][j][k].get(GRB.DoubleAttr.X));
+                                if(vettoreU[i][j][k].get(GRB.DoubleAttr.X)==1) {
+                                    System.out.println(vettoreU[i][j][k].get(GRB.StringAttr.VarName)+ " " +vettoreU[i][j][k].get(GRB.DoubleAttr.X));
+                                }
                             }   
                         }
                     }
@@ -127,6 +131,7 @@ public class ETPmodel {
             e.printStackTrace();
         }
         this.stampaVariabiliY(this.getIstanza().getEsami(), this.getIstanza().getLunghezzaExaminationPeriod());
+        this.stampaVariabiliU(this.getIstanza().getEsami(),this.getIstanza().getConflitti(), this.iSlot);
 
     }
 
@@ -211,7 +216,7 @@ public class ETPmodel {
         }
         for (Esame e1 : istanza.getEsami()) {
             for (Esame e2 : istanza.getEsami()) {
-                if ((e1.getId() - 1) > (e2.getId() -1)) {
+                //if ((e1.getId() - 1) > (e2.getId() -1)) {
                     if (matConflitti[e1.getId() - 1][e2.getId() - 1] > 0) {
                         for (int i = 0; i < this.iSlot; i++) {
                             double fattoreMoltiplicativo = ((Math.pow(2, iSlot - (i+1))) * matConflitti[e1.getId() - 1][e2.getId() - 1]) / totStudenti;
@@ -221,7 +226,7 @@ public class ETPmodel {
 
                         }
                     }
-                }
+               // }
             }
         }
 
