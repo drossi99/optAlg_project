@@ -4,11 +4,10 @@ public class Esame {
     private int id;
     private int Utenti_Iscritti;
     private ArrayList<Studente> studenti= new ArrayList<>();
+
     public Esame(int id, int Utenti_Iscritti){
         this.id=id;
         this.Utenti_Iscritti=Utenti_Iscritti;//numero iscritti
-        
-
     }   
 
     

@@ -24,6 +24,7 @@ public class Main{
 		//model.solve();
         model.heurSolve();
 
+
 		//model.stampaVariabiliY(istanza.getEsami(),istanza.getLunghezzaExaminationPeriod());
 		//model.stampaVariabiliU(istanza.getEsami(), istanza.getConflitti(), 5);
 
