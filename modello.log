@@ -10200,3 +10200,4280 @@ Set parameter MemLimit to value 16
 Academic license - for non-commercial use only - expires 2024-05-21
 Set parameter Presolve to value 2
 Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:10:18 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x454c8b62
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 46.8870704
+Presolve removed 161727 rows and 13824 columns
+Presolve time: 0.59s
+Presolved: 5362 rows, 1233 columns, 22420 nonzeros
+Found heuristic solution: objective 13.2667758
+Variable types: 0 continuous, 1233 integer (1233 binary)
+Root relaxation presolved: 5362 rows, 1233 columns, 22420 nonzeros
+
+
+Root relaxation: objective 2.618658e-02, 422 iterations, 0.05 seconds (0.08 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       0.0261866    0.02619  0.00%     -    0s
+     0     0    0.02619    0   51    0.02619    0.02619  0.00%     -    0s
+
+Explored 1 nodes (817 simplex iterations) in 0.76 seconds (0.79 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 0.0261866 13.2668 46.8871 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.618657937807e-02, best bound 2.618657937807e-02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:12:19 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x2e5979d3
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:12:53 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x4105a06b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:15:01 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x4105a06b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:15:47 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x4105a06b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:16:25 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x25b9e293
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:16:29 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x4105a06b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:17:11 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xeaca8d68
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:17:23 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xeaca8d68
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:18:41 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xeaca8d68
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:20:51 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xeaca8d68
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:21:55 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xeaca8d68
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:23:06 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:29:52 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xeaca8d68
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:30:10 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:33:19 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:36:11 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:38:12 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:38:43 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:39:13 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:39:26 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:41:00 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:42:29 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:44:12 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 17:46:08 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:38:23 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x238c4a44
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:39:44 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x7dd04f10
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 136781 rows and 10129 columns
+Presolve time: 1.27s
+Presolved: 30308 rows, 4928 columns, 123687 nonzeros
+Variable types: 0 continuous, 4928 integer (4928 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.34 seconds (1.84 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:41:33 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x7dd04f10
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 136781 rows and 10129 columns
+Presolve time: 1.19s
+Presolved: 30308 rows, 4928 columns, 123687 nonzeros
+Variable types: 0 continuous, 4928 integer (4928 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.26 seconds (1.84 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:43:16 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x7dd04f10
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 136781 rows and 10129 columns
+Presolve time: 1.30s
+Presolved: 30308 rows, 4928 columns, 123687 nonzeros
+Variable types: 0 continuous, 4928 integer (4928 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.37 seconds (1.84 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:45:09 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x7dd04f10
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 136781 rows and 10129 columns
+Presolve time: 1.43s
+Presolved: 30308 rows, 4928 columns, 123687 nonzeros
+Variable types: 0 continuous, 4928 integer (4928 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.51 seconds (1.84 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:47:10 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x7dd04f10
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 136781 rows and 10129 columns
+Presolve time: 1.20s
+Presolved: 30308 rows, 4928 columns, 123687 nonzeros
+Variable types: 0 continuous, 4928 integer (4928 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.27 seconds (1.84 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:47:42 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x7dd04f10
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 136781 rows and 10129 columns
+Presolve time: 1.24s
+Presolved: 30308 rows, 4928 columns, 123687 nonzeros
+Variable types: 0 continuous, 4928 integer (4928 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.32 seconds (1.84 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:50:16 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x7dd04f10
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 136781 rows and 10129 columns
+Presolve time: 1.27s
+Presolved: 30308 rows, 4928 columns, 123687 nonzeros
+Variable types: 0 continuous, 4928 integer (4928 binary)
+
+Explored 0 nodes (0 simplex iterations) in 1.33 seconds (1.84 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:52:44 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.17s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.23 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:53:13 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.17s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.22 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:53:35 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0x854f6905
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134388 rows and 6004 columns
+Presolve time: 0.70s
+
+Explored 0 nodes (0 simplex iterations) in 1.04 seconds (0.81 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:55:02 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0x59104925
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 104379 rows and 5243 columns
+Presolve time: 0.70s
+
+Explored 0 nodes (0 simplex iterations) in 1.05 seconds (0.82 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:55:40 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x12e4e605
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 32374 rows and 2641 columns
+Presolve time: 0.11s
+
+Explored 0 nodes (0 simplex iterations) in 0.17 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:55:56 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.21 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:56:18 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1227238 rows, 52120 columns and 3457416 nonzeros
+Model fingerprint: 0xef07f1ad
+Variable types: 47560 continuous, 4560 integer (4560 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e-04, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 138148 rows and 6490 columns
+Presolve time: 0.89s
+
+Explored 0 nodes (0 simplex iterations) in 1.28 seconds (0.98 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:57:21 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1505781 rows, 67203 columns and 4241043 nonzeros
+Model fingerprint: 0xc4aae2e7
+Variable types: 61200 continuous, 6003 integer (6003 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-04, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 182853 rows and 8806 columns
+Presolve time: 1.05s
+
+Explored 0 nodes (0 simplex iterations) in 1.52 seconds (1.21 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 18:58:23 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1222451 rows, 67410 columns and 3442430 nonzeros
+Model fingerprint: 0x08f6cc9c
+Variable types: 58190 continuous, 9220 integer (9220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-04, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 46.2927650
+Presolve removed 1222451 rows and 67410 columns
+Presolve time: 1.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 1.53 seconds (1.05 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 46.2928 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 4.629276500280e+01, best bound 4.629276500280e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:00:13 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 9445642 rows, 263950 columns and 26661570 nonzeros
+Model fingerprint: 0x92427121
+Variable types: 242180 continuous, 21770 integer (21770 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-05, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 104858 rows and 21770 columns (presolve time = 5s) ...
+Presolve removed 786158 rows and 29957 columns
+Presolve time: 7.58s
+
+Explored 0 nodes (0 simplex iterations) in 10.59 seconds (8.22 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:02:41 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 250623 rows, 14928 columns and 704592 nonzeros
+Model fingerprint: 0x7ca9a56f
+Variable types: 13470 continuous, 1458 integer (1458 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 36573 rows and 2127 columns
+Presolve time: 0.17s
+
+Explored 0 nodes (0 simplex iterations) in 0.25 seconds (0.18 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:02:57 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 128434 rows, 16090 columns and 358090 nonzeros
+Model fingerprint: 0x8143d50e
+Variable types: 14250 continuous, 1840 integer (1840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 32229 rows and 3079 columns
+Presolve time: 0.08s
+
+Explored 0 nodes (0 simplex iterations) in 0.12 seconds (0.09 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:03:10 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 842775 rows, 52148 columns and 2370996 nonzeros
+Model fingerprint: 0x91b19adb
+Variable types: 45290 continuous, 6858 integer (6858 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 129251 rows and 9641 columns
+Presolve time: 0.82s
+
+Explored 0 nodes (0 simplex iterations) in 1.27 seconds (0.66 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:03:51 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7177539 rows, 220116 columns and 20250828 nonzeros
+Model fingerprint: 0x2d40fd92
+Variable types: 202740 continuous, 17376 integer (17376 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-05, 3e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 10.3369347
+Presolve removed 642306 rows and 17376 columns (presolve time = 5s) ...
+Presolve removed 7177539 rows and 220116 columns
+Presolve time: 7.45s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 9.60 seconds (6.88 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 10.3369 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.033693468701e+01, best bound 1.033693468701e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:05:58 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 11621512 rows, 321840 columns and 32800570 nonzeros
+Model fingerprint: 0x09c4e9cf
+Variable types: 297970 continuous, 23870 integer (23870 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-05, 3e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.9335894
+Presolve removed 128910 rows and 852 columns (presolve time = 5s) ...
+Presolve removed 11621512 rows and 321840 columns (presolve time = 11s) ...
+Presolve removed 11621512 rows and 321840 columns
+Presolve time: 12.28s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 15.91 seconds (11.46 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11.9336 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.193358936484e+01, best bound 1.193358936484e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:09:02 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.21 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Thu May 25 19:14:44 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.21 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 17:49:47 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.24s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.31 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 17:51:17 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 18:52:59 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 18:55:41 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 18:56:42 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 18:57:14 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.19s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.24 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 18:58:11 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:01:16 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.17s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.22 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:01:37 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.21 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:02:52 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.17s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.22 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:03:11 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.18s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.24 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:04:43 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0x854f6905
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134388 rows and 6004 columns
+Presolve time: 0.77s
+
+Explored 0 nodes (0 simplex iterations) in 1.11 seconds (0.81 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:13:13 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0xed416d4e
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134859 rows and 5983 columns
+Presolve time: 0.80s
+
+Explored 0 nodes (0 simplex iterations) in 1.16 seconds (0.82 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:13:32 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0x449084ba
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 107799 rows and 5320 columns
+Presolve time: 0.73s
+
+Explored 0 nodes (0 simplex iterations) in 1.08 seconds (0.81 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:14:45 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0x84cb36ec
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 116000 rows and 5521 columns
+Presolve time: 0.78s
+
+Explored 0 nodes (0 simplex iterations) in 1.11 seconds (0.82 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:15:02 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0xc01459f5
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 115122 rows and 5473 columns
+Presolve time: 0.73s
+
+Explored 0 nodes (0 simplex iterations) in 1.06 seconds (0.81 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:15:20 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1031593 rows, 50261 columns and 2902905 nonzeros
+Model fingerprint: 0x8f332897
+Variable types: 46460 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 115857 rows and 5509 columns
+Presolve time: 0.71s
+
+Explored 0 nodes (0 simplex iterations) in 1.05 seconds (0.81 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:16:07 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x01a6abd4
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 33243 rows and 2706 columns
+Presolve time: 0.13s
+
+Explored 0 nodes (0 simplex iterations) in 0.18 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:16:13 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0xbd3a4b47
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 32672 rows and 2663 columns
+Presolve time: 0.11s
+
+Explored 0 nodes (0 simplex iterations) in 0.15 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:16:18 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x417134ae
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 33861 rows and 2735 columns
+Presolve time: 0.10s
+
+Explored 0 nodes (0 simplex iterations) in 0.15 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:16:23 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x3442fd76
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 33123 rows and 2691 columns
+Presolve time: 0.10s
+
+Explored 0 nodes (0 simplex iterations) in 0.15 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:16:58 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:17:10 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x445c1029
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 210.4942717
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 210.494 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.104942716858e+02, best bound 2.104942716858e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:19:25 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:19:40 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:19:48 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x03f94910
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 1 rows and 152 columns
+Presolve time: 0.06s
+
+Explored 0 nodes (0 simplex iterations) in 0.11 seconds (0.08 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:20:19 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x03f94910
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 1 rows and 152 columns
+Presolve time: 0.05s
+
+Explored 0 nodes (0 simplex iterations) in 0.11 seconds (0.08 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:20:30 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.21 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 19:21:23 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.21 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 20:59:31 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1222451 rows, 67410 columns and 3442430 nonzeros
+Model fingerprint: 0x31c0614b
+Variable types: 58190 continuous, 9220 integer (9220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-04, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 46.2927650
+Presolve removed 1222451 rows and 67410 columns
+Presolve time: 1.24s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 1.59 seconds (1.01 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 46.2928 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 4.629276500280e+01, best bound 4.629276500280e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:00:19 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7177539 rows, 220116 columns and 20250828 nonzeros
+Model fingerprint: 0x9239fbbf
+Variable types: 202740 continuous, 17376 integer (17376 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-05, 3e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 10.3369347
+Presolve removed 642306 rows and 17376 columns (presolve time = 6s) ...
+Presolve removed 7177539 rows and 220116 columns
+Presolve time: 7.94s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 10.20 seconds (6.70 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 10.3369 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.033693468701e+01, best bound 1.033693468701e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:04:03 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 9445642 rows, 263950 columns and 26661570 nonzeros
+Model fingerprint: 0xaea40c51
+Variable types: 242180 continuous, 21770 integer (21770 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-05, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 104858 rows and 21770 columns (presolve time = 6s) ...
+Presolve removed 786158 rows and 29957 columns
+Presolve time: 7.49s
+
+Explored 0 nodes (0 simplex iterations) in 10.71 seconds (8.22 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:15:28 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1505781 rows, 67203 columns and 4241043 nonzeros
+Model fingerprint: 0x1831e5da
+Variable types: 61200 continuous, 6003 integer (6003 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-04, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 182853 rows and 8806 columns
+Presolve time: 1.06s
+
+Explored 0 nodes (0 simplex iterations) in 1.57 seconds (1.21 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:37:15 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.16s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:37:50 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:38:21 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.22s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.28 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:47:13 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.19 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:47:59 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.15s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.20 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:52:36 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x8968716e
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.19s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.24 seconds (0.11 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:53:41 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.19s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.24 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:56:05 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.19s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.25 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:56:41 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.19s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.25 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:58:39 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 167089 rows, 15057 columns and 468207 nonzeros
+Model fingerprint: 0x968c8d81
+Variable types: 13250 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 201.6022913
+Presolve removed 167089 rows and 15057 columns
+Presolve time: 0.22s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.28 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 201.602 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.016022913257e+02, best bound 2.016022913257e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 21:59:36 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:01:57 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:08:59 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:09:06 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:10:06 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:10:26 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:10:46 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:11:36 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:13:13 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:13:32 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:14:31 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:15:20 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:16:12 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:16:39 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:17:04 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x73d6708e
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 9.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 9 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:17:29 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:17:41 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xd2b5c05d
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 14.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 14 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:17:51 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0xd2b5c05d
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 14.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 14 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:18:44 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:20:24 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:20:49 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:22:26 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:22:47 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:23:05 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:24:18 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:24:31 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:25:15 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:25:26 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:25:42 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xbac2cecd
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.500000000000e+01, best bound 1.500000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:26:12 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 214 rows, 74 columns and 594 nonzeros
+Model fingerprint: 0xddf523b8
+Variable types: 50 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 17.0000000
+Presolve removed 214 rows and 74 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 17 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.700000000000e+01, best bound 1.700000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:26:30 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 256 rows, 84 columns and 708 nonzeros
+Model fingerprint: 0x50a00bc8
+Variable types: 60 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 16.5000000
+Presolve removed 256 rows and 84 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 16.5 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.650000000000e+01, best bound 1.650000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:26:41 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 130 rows, 54 columns and 366 nonzeros
+Model fingerprint: 0x0de7155b
+Variable types: 30 continuous, 24 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [3e-01, 6e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.0000000
+Presolve removed 130 rows and 54 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:27:15 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 174145 rows, 15617 columns and 487919 nonzeros
+Model fingerprint: 0xd027c393
+Variable types: 13810 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 200.7675941
+Presolve removed 174145 rows and 15617 columns
+Presolve time: 0.21s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.26 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 200.768 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.007675941080e+02, best bound 2.007675941080e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:28:43 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1044913 rows, 50861 columns and 2940345 nonzeros
+Model fingerprint: 0x8c4cd250
+Variable types: 47060 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134474 rows and 5980 columns
+Presolve time: 0.75s
+
+Explored 0 nodes (0 simplex iterations) in 1.15 seconds (0.83 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:31:31 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1044913 rows, 50861 columns and 2940345 nonzeros
+Model fingerprint: 0x8c4cd250
+Variable types: 47060 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134474 rows and 5980 columns
+Presolve time: 0.74s
+
+Explored 0 nodes (0 simplex iterations) in 1.11 seconds (0.83 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:34:06 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1044913 rows, 50861 columns and 2940345 nonzeros
+Model fingerprint: 0x8c4cd250
+Variable types: 47060 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134474 rows and 5980 columns
+Presolve time: 0.71s
+
+Explored 0 nodes (0 simplex iterations) in 1.10 seconds (0.83 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:39:56 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1044913 rows, 50861 columns and 2940345 nonzeros
+Model fingerprint: 0x8c4cd250
+Variable types: 47060 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134474 rows and 5980 columns
+Presolve time: 0.84s
+
+Explored 0 nodes (0 simplex iterations) in 1.25 seconds (0.83 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:45:03 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1044913 rows, 50861 columns and 2940345 nonzeros
+Model fingerprint: 0x8c4cd250
+Variable types: 47060 continuous, 3801 integer (3801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e-03, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 134474 rows and 5980 columns
+Presolve time: 0.72s
+
+Explored 0 nodes (0 simplex iterations) in 1.08 seconds (0.83 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:49:02 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 174145 rows, 15617 columns and 487919 nonzeros
+Model fingerprint: 0xd027c393
+Variable types: 13810 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 200.7675941
+Presolve removed 174145 rows and 15617 columns
+Presolve time: 0.17s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.22 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 200.768
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.007675941080e+02, best bound 2.007675941080e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:49:57 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1236784 rows, 52490 columns and 3484278 nonzeros
+Model fingerprint: 0x83968fd2
+Variable types: 47930 continuous, 4560 integer (4560 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [9e-04, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 139452 rows and 6508 columns
+Presolve time: 0.89s
+
+Explored 0 nodes (0 simplex iterations) in 1.33 seconds (0.98 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:50:50 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1508487 rows, 67313 columns and 4248655 nonzeros
+Model fingerprint: 0x7fdf750e
+Variable types: 61310 continuous, 6003 integer (6003 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-04, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.9577982
+Presolve removed 1508487 rows and 67313 columns
+Presolve time: 1.46s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 1.94 seconds (1.31 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 15.9578
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.595779816514e+01, best bound 1.595779816514e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:54:38 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 174145 rows, 15617 columns and 487919 nonzeros
+Model fingerprint: 0xd027c393
+Variable types: 13810 continuous, 1807 integer (1807 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-03, 5e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 200.7675941
+Presolve removed 174145 rows and 15617 columns
+Presolve time: 0.17s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.22 seconds (0.12 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 200.768 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 2.007675941080e+02, best bound 2.007675941080e+02, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:54:54 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 1237991 rows, 68150 columns and 3486090 nonzeros
+Model fingerprint: 0x745fa3bf
+Variable types: 58930 continuous, 9220 integer (9220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [2e-04, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 46.6169377
+Presolve removed 1237991 rows and 68150 columns
+Presolve time: 1.62s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 2.14 seconds (1.06 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 46.6169 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 4.661693774537e+01, best bound 4.661693774537e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:56:38 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 9457732 rows, 264260 columns and 26695670 nonzeros
+Model fingerprint: 0x5d94fa9b
+Variable types: 242490 continuous, 21770 integer (21770 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-05, 6e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 104998 rows and 21770 columns (presolve time = 6s) ...
+Presolve removed 787326 rows and 29974 columns
+Presolve time: 7.94s
+
+Explored 0 nodes (0 simplex iterations) in 11.19 seconds (8.23 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:58:43 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 253599 rows, 15088 columns and 712944 nonzeros
+Model fingerprint: 0x679b42f2
+Variable types: 13630 continuous, 1458 integer (1458 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 3e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 37130 rows and 2141 columns
+Presolve time: 0.18s
+
+Explored 0 nodes (0 simplex iterations) in 0.26 seconds (0.19 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:59:02 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 128884 rows, 16140 columns and 359340 nonzeros
+Model fingerprint: 0x15703366
+Variable types: 14300 continuous, 1840 integer (1840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 32345 rows and 3084 columns
+Presolve time: 0.11s
+
+Explored 0 nodes (0 simplex iterations) in 0.15 seconds (0.09 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 22:59:18 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 843147 rows, 52168 columns and 2372040 nonzeros
+Model fingerprint: 0x2ef89e00
+Variable types: 45310 continuous, 6858 integer (6858 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [4e-04, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 129300 rows and 9642 columns
+Presolve time: 0.57s
+
+Explored 0 nodes (0 simplex iterations) in 0.85 seconds (0.66 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 23:00:04 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 7188513 rows, 220426 columns and 20281766 nonzeros
+Model fingerprint: 0x86e2a411
+Variable types: 203050 continuous, 17376 integer (17376 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [5e-05, 3e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 10.3906835
+Presolve removed 643280 rows and 17376 columns (presolve time = 6s) ...
+Presolve removed 7188513 rows and 220426 columns
+Presolve time: 7.98s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 10.37 seconds (6.90 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 10.3907 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.039068353331e+01, best bound 1.039068353331e+01, gap 0.0000%
+
+Gurobi 10.0.1 (win64, Java) logging started Tue May 30 23:01:37 2023
+
+Set parameter Username
+Set parameter MemLimit to value 16
+Academic license - for non-commercial use only - expires 2024-05-21
+Set parameter Presolve to value 2
+Set parameter MIPGap to value 1e-10
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 11628142 rows, 322010 columns and 32819270 nonzeros
+Model fingerprint: 0xab0735d2
+Variable types: 298140 continuous, 23870 integer (23870 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [6e-05, 3e-01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 11.9556869
+Presolve removed 128998 rows and 818 columns (presolve time = 6s) ...
+Presolve removed 11628142 rows and 33608 columns (presolve time = 10s) ...
+Presolve removed 11628142 rows and 322010 columns
+Presolve time: 13.39s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 17.63 seconds (11.46 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 11.9557 
+
+Optimal solution found (tolerance 1.00e-10)
+Best objective 1.195568685377e+01, best bound 1.195568685377e+01, gap 0.0000%
