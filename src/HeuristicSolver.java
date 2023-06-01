@@ -8,6 +8,7 @@ import java.io.FileWriter;
 
 
 public class HeuristicSolver {
+
     public static void calcolaSoluzioneIniziale(ETPmodel modello) throws GRBException {
         assegnaColoriOrdinamentoCasuale(modello);
         //modello.stampaVariabiliY(modello.getIstanza().getEsami(), modello.getIstanza().getLunghezzaExaminationPeriod());
@@ -121,6 +122,7 @@ public class HeuristicSolver {
         ArrayList<Esame> esami = new ArrayList<Esame>(model.getIstanza().getEsami());
         ArrayList<Esame> esamiOrdinati = new ArrayList<Esame>();
         esamiOrdinati=ordina(esami, model.getIstanza().getConflitti());
+        ArrayList<Esame> extraTimeSlot = new ArrayList<>();
 
 
         // assegno il primo esame al primo slot
@@ -163,8 +165,15 @@ public class HeuristicSolver {
                     //System.out.println(("settiamo y[" + (esamiOrdinati.get(e).getId()) + "][" + (q + 1) + "] a " + model.getVettoreY()[esamiOrdinati.get(e).getId() - 1][q].get(GRB.DoubleAttr.LB)));
                     break;
                 }
+
+            }
+            if (!isAssegnato) {
+                extraTimeSlot.add(esamiOrdinati.get(e));
+                System.out.println("ESAME EXTRA: "+esamiOrdinati.get(e).getId());
             }
         }
+
+
         /*
         for (int e = 1; e < esamiOrdinati.size(); e++) {
             isAssegnato = false;
@@ -199,6 +208,100 @@ public class HeuristicSolver {
         */
         stampaModello(stringa);
         System.out.println(cont);
+
+        if(extraTimeSlot.size()>0){
+            tabuSearch(extraTimeSlot, model);
+        }
+
+    }
+
+    public static void tabuSearch(ArrayList<Esame> extraTimeSlot, ETPmodel model) throws GRBException {
+        GRBModel modello = model.getModel();
+        ArrayList<Esame> listaEsami = new ArrayList<Esame>(model.getIstanza().getEsami());
+        int[][] matConflitti = model.getIstanza().getConflitti();
+        int tabu_tenure = model.getIstanza().getLunghezzaExaminationPeriod();
+        int numTimeslot = model.getIstanza().getLunghezzaExaminationPeriod();
+        int slotConMenoConflitti = 0;
+        int minorConflitti = model.getIstanza().getEsami().size();
+        int numConflitti = 0;
+        Random random = new Random();
+        boolean mossaproibita=false;
+        ArrayList<Esame> esamiInConflitto = new ArrayList<Esame>();
+
+        ArrayList<int[]> tabuList = new ArrayList<int[]>(); // int[] ha elementi [e, t, tenure]: l'esame e e' stato tolto dal timeslot t; ha ancora un tabutenure di tenure
+
+        while (extraTimeSlot.size() > 0) {
+            // seleziona un esame da schedulare (casualmente
+            int indexEsameDaSchedulare = random.nextInt(extraTimeSlot.size());
+            Esame esameDaSchedulare = extraTimeSlot.get(indexEsameDaSchedulare);
+            slotConMenoConflitti = 0;
+
+            for (int t = 0; t < numTimeslot; t++) {
+                numConflitti = 0;
+                for(int i = 0; i < listaEsami.size();i++) {
+                    if (model.getVettoreY()[listaEsami.get(i).getId() - 1][t].get(GRB.DoubleAttr.LB) == 1) {
+                        if (matConflitti[listaEsami.get(i).getId() - 1][esameDaSchedulare.getId() - 1] > 0) {
+                            numConflitti++;
+                        }
+                    }
+                }
+                if (numConflitti < minorConflitti) {
+                    minorConflitti = numConflitti;
+                    slotConMenoConflitti = t;
+                }
+            }
+
+            esamiInConflitto.clear();
+            mossaproibita=false;
+
+            for (int e = 0; e < listaEsami.size(); e++) {
+                if (model.getVettoreY()[listaEsami.get(e).getId() - 1][slotConMenoConflitti].get(GRB.DoubleAttr.LB) == 1) {
+                    for (int w = 0; w < tabuList.size(); w++) {
+                        if (tabuList.get(w)[1] == -1) {
+                            if (tabuList.get(w)[0] == listaEsami.get(e).getId()) {
+                                mossaproibita = true;
+                                break;
+                            } else {
+                                esamiInConflitto.add(listaEsami.get(e));
+                            }
+                        }
+                    }
+                }
+            }
+
+            for (int y=0; y<tabuList.size();y++) {
+                if(tabuList.get(y)[0]== esameDaSchedulare.getId() && tabuList.get(y)[1]==slotConMenoConflitti){
+                    mossaproibita=true;
+                    break;
+                }
+            }
+
+            if (!mossaproibita) {
+                for(int r=0; r<esamiInConflitto.size();r++){
+                    if (matConflitti[esamiInConflitto.get(r).getId() - 1][esameDaSchedulare.getId() - 1] > 0) {
+                        model.getVettoreY()[esamiInConflitto.get(r).getId() - 1][slotConMenoConflitti].set(GRB.DoubleAttr.LB, 0);
+                        modello.update();
+                        extraTimeSlot.add(esamiInConflitto.get(r));
+                        tabuList.add(creaTabuMove(esamiInConflitto.get(r).getId(), slotConMenoConflitti, tabu_tenure));
+                    }
+                }
+
+                model.getVettoreY()[esameDaSchedulare.getId() - 1][slotConMenoConflitti].set(GRB.DoubleAttr.LB, 1);
+                tabuList.add(creaTabuMove(esameDaSchedulare.getId(), -1, tabu_tenure)); //con -1 ci riferiamo all'extratimeslot
+                extraTimeSlot.remove(indexEsameDaSchedulare);
+                modello.update();
+            }else{
+                System.out.println("La mossa non è permessa");
+            }
+        }
+    }
+
+    private static int[] creaTabuMove(int e, int t, int tabu_tenure) {
+        int[] tabuMove = new int[3];
+        tabuMove[0] = e;
+        tabuMove[1] = t;
+        tabuMove[2] = tabu_tenure;
+        return tabuMove;
     }
 
 

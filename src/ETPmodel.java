@@ -77,8 +77,10 @@ public class ETPmodel {
         for (int i = 0; i < listaEsami.size(); i++) {
                     for (int j = 0; j < T; j++) {
                         if(vettoreY[i][j].get(GRB.DoubleAttr.X)==1) {
-                            System.out.println(vettoreY[i][j].get(GRB.StringAttr.VarName) + " " + vettoreY[i][j].get(GRB.DoubleAttr.X));
+                                System.out.println(vettoreY[i][j].get(GRB.StringAttr.VarName) + " " + vettoreY[i][j].get(GRB.DoubleAttr.X));
                         }
+
+
                     }
         }
     }
@@ -126,6 +128,7 @@ public class ETPmodel {
     public void heurSolve() throws GRBException {
         //HeuristicSolver.calcolaSoluzioneIniziale(this);
         HeuristicSolver.provaSoluzioneIniziale(this);
+        //metodo tabu
         try {
             model.optimize();
         } catch (GRBException e) {

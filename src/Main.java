@@ -16,7 +16,7 @@ public class Main{
 
         //System.out.println(T);
         
-        Istanza istanza = new Istanza("src/instance/instance11.exm", "src/instance/instance11.slo", "src/instance/instance11.stu");
+        Istanza istanza = new Istanza("src/instance/instance09.exm", "src/instance/instance09.slo", "src/instance/instance09.stu");
         ETPmodel model = new ETPmodel(istanza, 5);
 
         model.buildModel();
