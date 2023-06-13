@@ -15,8 +15,9 @@ public class Main{
         studenti = LetturaFile.leggiStu(".\\instance\\test.stu", esami);*/
 
         //System.out.println(T);
+        String t="instance08";
         
-        Istanza istanza = new Istanza("src/instance/instance09.exm", "src/instance/instance09.slo", "src/instance/instance09.stu");
+        Istanza istanza = new Istanza("src/instance/"+t+".exm", "src/instance/"+t+".slo", "src/instance/"+t+".stu");
         ETPmodel model = new ETPmodel(istanza, 5);
 
         model.buildModel();

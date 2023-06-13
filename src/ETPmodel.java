@@ -2,13 +2,52 @@ import gurobi.*;
 
 import java.util.ArrayList;
 
-public class ETPmodel {
+public class ETPmodel{
     private GRBEnv env;
     private GRBModel model;
     private Istanza istanza;
+
+    public void setEnv(GRBEnv env) {
+        this.env = env;
+    }
+
+    public void setModel(GRBModel model) {
+        this.model = model;
+    }
+
+    public void setIstanza(Istanza istanza) {
+        this.istanza = istanza;
+    }
+
+    public void setiSlot(int iSlot) {
+        this.iSlot = iSlot;
+    }
+
+    public void setVettoreY(GRBVar[][] vettoreY) {
+        this.vettoreY = vettoreY;
+    }
+
+    public void setVettoreU(GRBVar[][][] vettoreU) {
+        this.vettoreU = vettoreU;
+    }
+
     private int iSlot;
     private GRBVar[][] vettoreY;
     private GRBVar[][][] vettoreU;
+
+    public void copy(ETPmodel model) {
+        this.setEnv(model.getEnv());
+        this.setModel(model.getModel());
+        this.setIstanza(model.getIstanza());
+        this.setiSlot(model.getiSlot());
+        this.setVettoreY(model.getVettoreY());
+        this.setVettoreU(model.getVettoreU());
+    }
+
+    public ETPmodel(ETPmodel model){
+        this.copy(model);
+    }
+
 
     public GRBEnv getEnv() {
         return env;
@@ -126,14 +165,24 @@ public class ETPmodel {
     }
 
     public void heurSolve() throws GRBException {
+        int numeroIterazioni = 10;
+        int counterIterazioni = 0;
+        double bestSolution=0;
         //HeuristicSolver.calcolaSoluzioneIniziale(this);
         HeuristicSolver.provaSoluzioneIniziale(this);
-        //metodo tabu
         try {
             model.optimize();
+            bestSolution=this.getObjValue();
         } catch (GRBException e) {
             e.printStackTrace();
         }
+        do {
+
+            bestSolution=HeuristicSolver.improvingLocalSearch(this, bestSolution);
+            counterIterazioni++;
+        } while (numeroIterazioni > counterIterazioni);
+        //metodo tabu
+
         //this.stampaVariabiliY(this.getIstanza().getEsami(), this.getIstanza().getLunghezzaExaminationPeriod());
         //this.stampaVariabiliU(this.getIstanza().getEsami(), this.getIstanza().getConflitti(), this.getiSlot());
         //Utility.stampaTabConflitti(istanza.getConflitti());

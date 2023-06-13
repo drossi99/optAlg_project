@@ -12,6 +12,30 @@ public class Istanza{
     private String fileNameStu;
     //private final LetturaFile lf;
 
+    public String getFileNameExm() {
+        return fileNameExm;
+    }
+
+    public String getFileNameSlo() {
+        return fileNameSlo;
+    }
+
+    public void setFileNameSlo(String fileNameSlo) {
+        this.fileNameSlo = fileNameSlo;
+    }
+
+    public String getFileNameStu() {
+        return fileNameStu;
+    }
+
+    public void setFileNameStu(String fileNameStu) {
+        this.fileNameStu = fileNameStu;
+    }
+
+    public void setFileNameExm(String fileNameExm) {
+        this.fileNameExm = fileNameExm;
+    }
+
     public Istanza(String fileNameExm, String fileNameSlo, String fileNameStu) throws FileNotFoundException, IOException{
         this.fileNameExm=fileNameExm;
         this.fileNameSlo=fileNameSlo;
