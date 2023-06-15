@@ -165,23 +165,42 @@ public class ETPmodel{
     }
 
     public void heurSolve() throws GRBException {
-        int numeroIterazioni = 10;
+        int numeroIterazioni = 200;
         int counterIterazioni = 0;
-        double bestSolution=0;
+        double Solution=0;
         //HeuristicSolver.calcolaSoluzioneIniziale(this);
         HeuristicSolver.provaSoluzioneIniziale(this);
         try {
             model.optimize();
-            bestSolution=this.getObjValue();
+            Solution=this.getObjValue();
         } catch (GRBException e) {
             e.printStackTrace();
         }
         do {
 
-            bestSolution=HeuristicSolver.improvingLocalSearch(this, bestSolution);
+            Solution=HeuristicSolver.improvingLocalSearch(this, Solution);
             counterIterazioni++;
         } while (numeroIterazioni > counterIterazioni);
-        //metodo tabu
+
+
+        System.out.println();System.out.println();
+        System.out.println();System.out.println();
+        //metodo sim annealing
+        double temperatura=20000;
+        double alfa = 0.9;
+        int counterSimulated=0;
+        int iterzioniSimulated=50;
+        do {
+
+            Solution=HeuristicSolver.improvingWithSimulatedAnnealing(this, temperatura);
+            //temperatura = temperatura * alfa;
+            temperatura = temperatura/(1+500*temperatura);
+
+            System.out.println();
+            System.out.println("la soluzione attuale è: "+Solution);
+            System.out.println();
+            counterSimulated++;
+        } while (counterSimulated < iterzioniSimulated);
 
         //this.stampaVariabiliY(this.getIstanza().getEsami(), this.getIstanza().getLunghezzaExaminationPeriod());
         //this.stampaVariabiliU(this.getIstanza().getEsami(), this.getIstanza().getConflitti(), this.getiSlot());

@@ -111,23 +111,23 @@ public class HeuristicSolver {
     }
 
     public static void provaSoluzioneIniziale(ETPmodel model) throws GRBException {
-        int cont=0;
-        StringBuffer stringa= new StringBuffer();
+        int cont = 0;
+        StringBuffer stringa = new StringBuffer();
         GRBModel modello = model.getModel();
         ArrayList<Integer> slotOccupati = new ArrayList<Integer>();
         int slotlibero;
         int[][] matConflitti = model.getIstanza().getConflitti();
-        boolean isAssegnato=false;
+        boolean isAssegnato = false;
         ArrayList<Esame> esami = new ArrayList<Esame>(model.getIstanza().getEsami());
         ArrayList<Esame> esamiOrdinati = new ArrayList<Esame>();
-        esamiOrdinati=ordina(esami, model.getIstanza().getConflitti());
+        esamiOrdinati = ordina(esami, model.getIstanza().getConflitti());
         ArrayList<Esame> extraTimeSlot = new ArrayList<>();
 
 
         // assegno il primo esame al primo slot
         model.getVettoreY()[esamiOrdinati.get(0).getId() - 1][0].set(GRB.DoubleAttr.LB, 1);
         modello.update();
-        stringa.append(esamiOrdinati.get(0).getId()+" 1\n");
+        stringa.append(esamiOrdinati.get(0).getId() + " 1\n");
         cont++;
         //System.out.println(("settiamo y[" + (esamiOrdinati.get(0).getId()) + "][" + 1 + "] a " + model.getVettoreY()[esamiOrdinati.get(0).getId() - 1][0].get(GRB.DoubleAttr.LB)));
 
@@ -136,7 +136,7 @@ public class HeuristicSolver {
             for (int i = 0; i < e; i++) {
                 if (matConflitti[esamiOrdinati.get(e).getId() - 1][esamiOrdinati.get(i).getId() - 1] > 0) {
                     for (int t = 0; t < model.getIstanza().getLunghezzaExaminationPeriod(); t++) {
-                        if(model.getVettoreY()[esamiOrdinati.get(i).getId()-1][t].get(GRB.DoubleAttr.LB)==1){
+                        if (model.getVettoreY()[esamiOrdinati.get(i).getId() - 1][t].get(GRB.DoubleAttr.LB) == 1) {
                             slotOccupati.add(t);
                         }
                     }
@@ -147,19 +147,19 @@ public class HeuristicSolver {
                 slotOccupati.forEach((i)-> System.out.println(i));
             }*/
 
-            for(int q = 0; q < model.getIstanza().getLunghezzaExaminationPeriod(); q++ ){
-                isAssegnato=true;
-                for (int z = 0; z<slotOccupati.size(); z++){
-                    if(q == slotOccupati.get(z)){
+            for (int q = 0; q < model.getIstanza().getLunghezzaExaminationPeriod(); q++) {
+                isAssegnato = true;
+                for (int z = 0; z < slotOccupati.size(); z++) {
+                    if (q == slotOccupati.get(z)) {
                         //System.out.println("q "+q+"= "+slotOccupati.get(z));
-                        isAssegnato=false;
+                        isAssegnato = false;
 
                     }
                 }
-                if(isAssegnato) {
+                if (isAssegnato) {
                     model.getVettoreY()[esamiOrdinati.get(e).getId() - 1][q].set(GRB.DoubleAttr.LB, 1);
                     modello.update();
-                    stringa.append(esamiOrdinati.get(e).getId()+" "+(q+1)+"\n");
+                    stringa.append(esamiOrdinati.get(e).getId() + " " + (q + 1) + "\n");
                     cont++;
                     //System.out.println(("settiamo y[" + (esamiOrdinati.get(e).getId()) + "][" + (q + 1) + "] a " + model.getVettoreY()[esamiOrdinati.get(e).getId() - 1][q].get(GRB.DoubleAttr.LB)));
                     break;
@@ -168,7 +168,7 @@ public class HeuristicSolver {
             }
             if (!isAssegnato) {
                 extraTimeSlot.add(esamiOrdinati.get(e));
-                System.out.println("ESAME EXTRA: "+esamiOrdinati.get(e).getId());
+                System.out.println("ESAME EXTRA: " + esamiOrdinati.get(e).getId());
             }
         }
 
@@ -208,7 +208,7 @@ public class HeuristicSolver {
         //stampaModello(stringa);
         System.out.println(cont);
 
-        if(extraTimeSlot.size()>0){
+        if (extraTimeSlot.size() > 0) {
             tabuSearch(extraTimeSlot, model);
         }
 
@@ -216,12 +216,12 @@ public class HeuristicSolver {
     }
 
     public static void tabuSearch(ArrayList<Esame> extraTimeSlot, ETPmodel model) throws GRBException {
-        StringBuffer stringa= new StringBuffer();
+        StringBuffer stringa = new StringBuffer();
         GRBModel modello = model.getModel();
         ArrayList<Esame> listaEsami = new ArrayList<Esame>(model.getIstanza().getEsami());
         int[][] matConflitti = model.getIstanza().getConflitti();
         int tabu_tenure = model.getIstanza().getLunghezzaExaminationPeriod();
-        tabu_tenure=2;
+        tabu_tenure = 2;
         int numTimeslot = model.getIstanza().getLunghezzaExaminationPeriod();
         int slotConMenoConflitti = 0;
         int minorConflitti = model.getIstanza().getEsami().size();
@@ -229,38 +229,38 @@ public class HeuristicSolver {
         int trueMinorConflitti;
         int trueslotConMenoConflitti = 0;
         Random random = new Random();
-        boolean mossaproibita=false;
-        boolean mossaobbligata=false;
+        boolean mossaproibita = false;
+        boolean mossaobbligata = false;
         ArrayList<Esame> esamiInConflitto = new ArrayList<Esame>();
-        int []conflittiTimeSLot=new int[numTimeslot];
-        int cont=0;
-        int indexExtraSlot=0;
+        int[] conflittiTimeSLot = new int[numTimeslot];
+        int cont = 0;
+        int indexExtraSlot = 0;
 
 
         ArrayList<int[]> tabuList = new ArrayList<int[]>(); // int[] ha elementi [e, t, tenure]: l'esame e e' stato tolto dal timeslot t; ha ancora un tabutenure di tenure
 
         while (extraTimeSlot.size() > 0) {
-            cont=0;
+            cont = 0;
 
             System.out.println(extraTimeSlot.size());
             // seleziona un esame da schedulare (casualmente
             //int indexEsameDaSchedulare = random.nextInt(extraTimeSlot.size());
             //Esame esameDaSchedulare = extraTimeSlot.get(indexEsameDaSchedulare);
-            Esame esameDaSchedulare=extraTimeSlot.get(indexExtraSlot);
-            System.out.println("esame da schedulare: " +esameDaSchedulare.getId());
+            Esame esameDaSchedulare = extraTimeSlot.get(indexExtraSlot);
+            System.out.println("esame da schedulare: " + esameDaSchedulare.getId());
             slotConMenoConflitti = 0;
-            minorConflitti=1000;
+            minorConflitti = 1000;
 
             for (int t = 0; t < numTimeslot; t++) {
                 numConflitti = 0;
-                for(int i = 0; i < listaEsami.size();i++) {
+                for (int i = 0; i < listaEsami.size(); i++) {
                     if (model.getVettoreY()[listaEsami.get(i).getId() - 1][t].get(GRB.DoubleAttr.LB) == 1) {
                         if (matConflitti[listaEsami.get(i).getId() - 1][esameDaSchedulare.getId() - 1] > 0) {
                             numConflitti++;
                         }
                     }
                 }
-                conflittiTimeSLot[t]=numConflitti;
+                conflittiTimeSLot[t] = numConflitti;
                 /*if (numConflitti < minorConflitti) {
                     minorConflitti = numConflitti;
                     slotConMenoConflitti = t;
@@ -279,7 +279,7 @@ public class HeuristicSolver {
             do {
 
                 esamiInConflitto.clear();
-                mossaproibita=false;
+                mossaproibita = false;
                 minorConflitti = getSmallest(conflittiTimeSLot);
                 for (int c = 0; c < conflittiTimeSLot.length; c++) {
                     if (conflittiTimeSLot[c] == minorConflitti) {
@@ -359,9 +359,9 @@ public class HeuristicSolver {
                     modello.update();
                     mossaproibita=false;
                 }*/
-            }while(mossaproibita && cont<numTimeslot);
+            } while (mossaproibita && cont < numTimeslot);
 
-            if(!mossaproibita) {
+            if (!mossaproibita) {
                 for (int y = 0; y < tabuList.size(); y++) {
                     if (tabuList.get(y)[2] == 1) {
                         tabuList.remove(y);
@@ -370,15 +370,15 @@ public class HeuristicSolver {
                     }
 
                 }
-                indexExtraSlot=0;
+                indexExtraSlot = 0;
                 Collections.shuffle(extraTimeSlot);
-            } else{
+            } else {
                 indexExtraSlot++;
             }
 
-            if(indexExtraSlot>=extraTimeSlot.size()){
+            if (indexExtraSlot >= extraTimeSlot.size()) {
                 tabuList = defaultAspirationCriteria(tabuList);
-                indexExtraSlot=0;
+                indexExtraSlot = 0;
             }
             /*else {
                 //if se abbiamo controllato gia tutti gli esami e non possiamo fare nulla
@@ -387,9 +387,9 @@ public class HeuristicSolver {
 
         }
         for (int t = 0; t < numTimeslot; t++) {
-            for(int i = 0; i < listaEsami.size();i++) {
+            for (int i = 0; i < listaEsami.size(); i++) {
                 if (model.getVettoreY()[listaEsami.get(i).getId() - 1][t].get(GRB.DoubleAttr.LB) == 1) {
-                    stringa.append(listaEsami.get(i).getId()+" "+(t+1)+"\n");
+                    stringa.append(listaEsami.get(i).getId() + " " + (t + 1) + "\n");
                 }
 
             }
@@ -427,20 +427,19 @@ public class HeuristicSolver {
 
         String fileName = "C:\\Users\\Utente\\OneDrive\\Desktop\\optimization algoritms\\progetto\\instance\\instance.sol";
 
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))){
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             //writer.write(IDesame.toString()+" "+timeslot.toString()+"\n"); // do something with the file we've opened
-             writer.write(stringa.toString());
-        }
-        catch(IOException e){
+            writer.write(stringa.toString());
+        } catch (IOException e) {
             e.printStackTrace();
         }
-	}
+    }
 
-    public static int getSmallest(int[] a){
-        int min=1000;
-        for (int i = 0; i < a.length-1; i++){
-            if(a[i]<min){
-                min=a[i];
+    public static int getSmallest(int[] a) {
+        int min = 1000;
+        for (int i = 0; i < a.length - 1; i++) {
+            if (a[i] < min) {
+                min = a[i];
             }
         }
         return min;
@@ -449,11 +448,11 @@ public class HeuristicSolver {
     public static double improvingLocalSearch(ETPmodel model, double bestSolution) throws GRBException {
         System.out.println("improvingLocalSearch");
         ArrayList<GRBModel> neighborhood = new ArrayList<>();
-        double currentSolution = calcolaBestSolutionDelNeighborhood(model,bestSolution);
+        double currentSolution = calcolaBestSolutionDelNeighborhood(model, bestSolution);
 
 
         System.out.println();
-        System.out.println("la soluzione migliore è: "+currentSolution);
+        System.out.println("la soluzione migliore è: " + currentSolution);
         System.out.println();
 
         return currentSolution;
@@ -469,7 +468,7 @@ public class HeuristicSolver {
 
 
     private static double calcolaBestSolutionDelNeighborhood(ETPmodel model, double bestSolution) throws GRBException {
-        StringBuffer stringa= new StringBuffer();
+        GRBModel modello=model.getModel();
         ArrayList<Esame> listaEsami = new ArrayList<Esame>(model.getIstanza().getEsami());
         Random random = new Random();
         ArrayList<GRBModel> neighborhood = new ArrayList<>();
@@ -481,6 +480,7 @@ public class HeuristicSolver {
         int[][] matConflitti = model.getIstanza().getConflitti();
         ArrayList<Integer> listaSlotDisponibili = new ArrayList<>();
         ETPmodel bestModel = model;
+        modello.update();
 
         int slotEsame1 = cercaSlotEsame(indiceEsame1, model.getVettoreY());
         System.out.println("esame estratto: " + indiceEsame1 + " slot: " + slotEsame1);
@@ -506,12 +506,31 @@ public class HeuristicSolver {
                     }
                     if (slotIsUsabile) {
                         System.out.println("time slot possibile: "+t);
-                        listaSlotDisponibili.add(t);
+                        model.getVettoreY()[indiceEsame1][slotEsame1].set(GRB.DoubleAttr.LB, 0);
+                        model.solve();
+
+                        for(int l=0;l<numeroSlot;l++){
+                            if(model.getVettoreY()[indiceEsame1][l].get(GRB.DoubleAttr.X) == 1){
+
+                                System.out.println("here");
+                                model.getVettoreY()[indiceEsame1][l].set(GRB.DoubleAttr.LB, 1);
+
+                                break;
+                            }
+                        }
+
+
+                        return model.getObjValue();
+
+                        //listaSlotDisponibili.add(t);
                     }
                 }
             }
         }
+        return bestSolution;
 
+
+        /*
         //Collections.shuffle(listaSlotDisponibili);
         for (int t : listaSlotDisponibili) {
             System.out.println(t);
@@ -526,6 +545,7 @@ public class HeuristicSolver {
 
             if(modelloNeighborhood.getObjValue() < bestSolution){
                 bestSolution=modelloNeighborhood.getObjValue();
+                StringBuffer stringa= new StringBuffer();
                 for (int p = 0; p < numeroSlot; p++) {
                     for(int i = 0; i < listaEsami.size();i++) {
                         if (model.getVettoreY()[listaEsami.get(i).getId() - 1][p].get(GRB.DoubleAttr.LB) == 1) {
@@ -541,7 +561,12 @@ public class HeuristicSolver {
             modelloNeighborhood.getVettoreY()[indiceEsame1][slotEsame1].set(GRB.DoubleAttr.LB, 1);
         }
         return bestSolution;
+
+         */
+
     }
+
+
 
     private static int cercaSlotEsame(int indiceEsame, GRBVar[][] vettoreY) throws GRBException {
         for (int t = 0; t < vettoreY[indiceEsame].length; t++) {
@@ -551,6 +576,126 @@ public class HeuristicSolver {
         }
         return 0; //ma in teoria non ci dovrebbe arrivare qua
     }
+
+    /*
+    metodi per soluzione con simulated annealing
+    */
+    public static double improvingWithSimulatedAnnealing(ETPmodel model, double T) throws GRBException {
+        GRBModel modello=model.getModel();
+        ArrayList<Esame> listaEsami = model.getIstanza().getEsami();
+        int[][] matConflitti = model.getIstanza().getConflitti();
+        GRBVar[][] vettoreY = model.getVettoreY();
+        int indiceEsame2=0;
+        int indiceEsame1=0;
+        boolean flag=true;
+        int maxIteration=20;
+        int cont=0;
+        while(flag && cont<maxIteration){
+            indiceEsame1 = estraiEsameConConflitto(matConflitti);
+            do{
+                indiceEsame2 = estraiEsameConConflitto(matConflitti);
+            }while(indiceEsame1==indiceEsame2 || cercaSlotEsame(indiceEsame1, vettoreY) == cercaSlotEsame(indiceEsame2, vettoreY));
+
+            flag=hasConflittiNelNuovoTimeslot(indiceEsame1, indiceEsame2, vettoreY, matConflitti);
+            cont++;
+        }
+
+        if (!flag) {
+            System.out.println("scambio esame1: " + indiceEsame1 + " con esame2: " + indiceEsame2);
+            double currentBestObjValue = model.getObjValue();
+            int slotEsame1 = cercaSlotEsame(indiceEsame1, vettoreY);
+            int slotEsame2 = cercaSlotEsame(indiceEsame2, vettoreY);
+
+            vettoreY[indiceEsame1][slotEsame1].set(GRB.DoubleAttr.LB, 0);
+            vettoreY[indiceEsame1][slotEsame2].set(GRB.DoubleAttr.LB, 1);
+            vettoreY[indiceEsame2][slotEsame2].set(GRB.DoubleAttr.LB, 0);
+            vettoreY[indiceEsame2][slotEsame1].set(GRB.DoubleAttr.LB, 1);
+
+            modello.update();
+            modello.optimize();
+
+            // se è una sol migliore: accetto, else accetto con probabilità p
+            if (model.getObjValue() < currentBestObjValue) {
+                return model.getObjValue();
+                //accetto la soluzione
+            } else {
+                // simulated annealing: la accetto con prob p
+                double p = Math.exp(-(model.getObjValue() - currentBestObjValue) / T);
+                Random random = new Random();
+                double randomValue = random.nextDouble();
+
+                if (randomValue < p) {
+                    System.out.println("sim annealing: accetto");
+                    return model.getObjValue();
+                } else {
+                    System.out.println("sim annealing: ngon accetto");
+                    vettoreY[indiceEsame1][slotEsame1].set(GRB.DoubleAttr.LB, 1);
+                    vettoreY[indiceEsame1][slotEsame2].set(GRB.DoubleAttr.LB, 0);
+                    vettoreY[indiceEsame2][slotEsame2].set(GRB.DoubleAttr.LB, 1);
+                    vettoreY[indiceEsame2][slotEsame1].set(GRB.DoubleAttr.LB, 0);
+                    modello.update();
+                    modello.optimize();
+                }
+            }
+        } else {
+            System.out.println("numero massimo di iterazioni raggiunto");
+        }
+
+        return model.getObjValue();
+    }
+
+    private static int estraiEsameConConflitto(int[][] matConflitti) {
+        Random random = new Random();
+        int indiceEsame;
+        boolean hasConflitti = false;
+        do {
+            indiceEsame = random.nextInt(matConflitti.length);
+            int e = 0;
+            do {
+                hasConflitti = (matConflitti[indiceEsame][e] > 0);
+                e++;
+            } while (!hasConflitti);
+        } while (!hasConflitti);
+
+        return indiceEsame;
+    }
+
+    private static boolean hasConflittiNelNuovoTimeslot(int indiceEsame1, int indiceEsame2, GRBVar[][] vettoreY, int[][] matConflitti) throws GRBException {
+        int slotEsame1 = cercaSlotEsame(indiceEsame1, vettoreY);
+        int slotEsame2 = cercaSlotEsame(indiceEsame2, vettoreY);
+
+        ArrayList<Integer> listaEsamiSlot1 = getListaEsamiSlot(slotEsame1, vettoreY);
+        ArrayList<Integer> listaEsamiSlot2 = getListaEsamiSlot(slotEsame2, vettoreY);
+
+        //System.out.println("lista esami slot 1");
+        for (int idEsame : listaEsamiSlot1) {
+            //System.out.println(idEsame);
+            if(matConflitti[idEsame][indiceEsame2]>0){
+                return true;
+            }
+        }
+
+        //System.out.println("lista esami slot 2");
+        for (int idEsame : listaEsamiSlot2) {
+            //System.out.println(idEsame);
+            if (matConflitti[idEsame][indiceEsame1] > 0) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static ArrayList<Integer> getListaEsamiSlot(int slot, GRBVar[][] vettoreY) throws GRBException {
+        ArrayList<Integer> listaEsamiSlot = new ArrayList<>();
+        for (int e=0; e<vettoreY.length; e++){
+            if(vettoreY[e][slot].get(GRB.DoubleAttr.LB)==1){
+                listaEsamiSlot.add(e);
+            }
+        }
+        return listaEsamiSlot;
+    }
+
 
 
 }
