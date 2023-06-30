@@ -15,7 +15,7 @@ public class Main{
         studenti = LetturaFile.leggiStu(".\\instance\\test.stu", esami);*/
 
         //System.out.println(T);
-        String t="instance08";
+        String t="instance09";
         
         Istanza istanza = new Istanza("src/instance/"+t+".exm", "src/instance/"+t+".slo", "src/instance/"+t+".stu");
         ETPmodel model = new ETPmodel(istanza, 5);
@@ -24,6 +24,7 @@ public class Main{
         //model.getModel().write("modello.lp");
 		//model.solve();
         model.heurSolve();
+        //model.rilassato();
 
 
 		//model.stampaVariabiliY(istanza.getEsami(),istanza.getLunghezzaExaminationPeriod());

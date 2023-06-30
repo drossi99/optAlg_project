@@ -164,10 +164,21 @@ public class ETPmodel{
         }
     }
 
+    public void rilassato() throws GRBException{
+        double Solution=-5;
+        GRBModel rilassato;
+        rilassato=model.relax();
+        rilassato.optimize();
+        Solution=rilassato.get(GRB.DoubleAttr.ObjVal);
+        System.out.println("la soluzione del rilassato è: "+Solution);
+        
+    }
+
     public void heurSolve() throws GRBException {
-        int numeroIterazioni = 200;
+        int numeroIterazioni = 50;
         int counterIterazioni = 0;
         double Solution=0;
+        double bestSolution=100000;
         //HeuristicSolver.calcolaSoluzioneIniziale(this);
         HeuristicSolver.provaSoluzioneIniziale(this);
         try {
@@ -176,31 +187,66 @@ public class ETPmodel{
         } catch (GRBException e) {
             e.printStackTrace();
         }
-        do {
 
-            Solution=HeuristicSolver.improvingLocalSearch(this, Solution);
-            counterIterazioni++;
-        } while (numeroIterazioni > counterIterazioni);
 
 
         System.out.println();System.out.println();
         System.out.println();System.out.println();
         //metodo sim annealing
-        double temperatura=20000;
+        double temperatura0=20000;
+        double temperatura=temperatura0;
+        int j=0;
+        double nreset=5;
         double alfa = 0.9;
         int counterSimulated=0;
-        int iterzioniSimulated=50;
-        do {
+        double iterzioniSimulated=30;
 
-            Solution=HeuristicSolver.improvingWithSimulatedAnnealing(this, temperatura);
-            //temperatura = temperatura * alfa;
-            temperatura = temperatura/(1+500*temperatura);
+        for(int i=0;i<3;i++) {
+            counterIterazioni=0;
+            do {
 
-            System.out.println();
-            System.out.println("la soluzione attuale è: "+Solution);
-            System.out.println();
-            counterSimulated++;
-        } while (counterSimulated < iterzioniSimulated);
+                Solution = HeuristicSolver.improvingLocalSearch(this, Solution);
+                counterIterazioni++;
+
+            } while (numeroIterazioni > counterIterazioni);
+
+            this.solve();
+
+            counterSimulated=0;
+            do {
+
+                Solution = HeuristicSolver.improvingWithSimulatedAnnealing(this, temperatura);
+                //Solution = HeuristicSolver.improvingWithGreatDeluge(this, temperatura);
+
+
+
+                if (Solution < bestSolution) {
+                    bestSolution = Solution;
+                }
+                //temperatura = temperatura * alfa;
+                temperatura = temperatura / (1 + 500 * temperatura);
+
+                if (temperatura < 0.0001) {
+                    temperatura = temperatura0;
+                    j++;
+                    if (j > nreset) {
+                        j = 0;
+                        temperatura0 = temperatura0 * 2.5;
+                        nreset += 0.05;
+                        iterzioniSimulated += (iterzioniSimulated / 5);
+                    }
+                }
+
+                System.out.println();
+                System.out.println("la soluzione attuale è: " + Solution);
+                System.out.println();
+                counterSimulated++;
+            } while (counterSimulated < iterzioniSimulated);
+        }
+
+
+
+        System.out.println("la soluzione migliore è: "+bestSolution);
 
         //this.stampaVariabiliY(this.getIstanza().getEsami(), this.getIstanza().getLunghezzaExaminationPeriod());
         //this.stampaVariabiliU(this.getIstanza().getEsami(), this.getIstanza().getConflitti(), this.getiSlot());
