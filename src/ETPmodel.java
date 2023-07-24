@@ -6,6 +6,11 @@ public class ETPmodel{
     private GRBEnv env;
     private GRBModel model;
     private Istanza istanza;
+    private int iSlot;
+    private GRBVar[][] vettoreY;
+    private GRBVar[][][] vettoreU;
+    
+        
 
     public void setEnv(GRBEnv env) {
         this.env = env;
@@ -30,10 +35,6 @@ public class ETPmodel{
     public void setVettoreU(GRBVar[][][] vettoreU) {
         this.vettoreU = vettoreU;
     }
-
-    private int iSlot;
-    private GRBVar[][] vettoreY;
-    private GRBVar[][][] vettoreU;
 
     public void copy(ETPmodel model) {
         this.setEnv(model.getEnv());
