@@ -195,6 +195,8 @@ public class HeuristicSolver {
             //tabuSearch(extraTimeSlot, model);
             penalization(extraTimeSlot, model);
         }
+        modello.update();
+        model.getModel().write("modello.lp");
 
 
 
@@ -238,15 +240,65 @@ public class HeuristicSolver {
             }
 
 
-            GRBLinExpr funObjAusiliaria = (GRBLinExpr) model.getModel().getObjective();
+            /*GRBLinExpr funObjAusiliaria = (GRBLinExpr) model.getModel().getObjective();
             funObjAusiliaria.addTerm(500,model.getVettoreY()[esameDaSchedulare.getId()-1][tmax]);
             System.out.println("aggiungo in fun obj +500 * y_e_t(con piu conflitti)");
             modello.setObjective(funObjAusiliaria);
 
+             */
+
         }
         modello.update();
 
-        localSearchInfeasible(model,tmin);
+        try {
+            modello.optimize();
+
+            modello.computeIIS();
+            GRBConstr[] iisConstraints = modello.getConstrs();
+
+            GRBLinExpr funObjAusiliaria = (GRBLinExpr) model.getModel().getObjective();
+            for (GRBConstr c : iisConstraints) {
+
+                if (c.get(GRB.IntAttr.IISConstr) == 1) {
+
+                    System.out.println("vincolo infeasible vioolato: " + c.get(GRB.StringAttr.ConstrName));
+                    GRBLinExpr penaltyTerm = new GRBLinExpr();
+
+                    GRBLinExpr constraintExpr = modello.getRow(c);
+                    penaltyTerm.add(constraintExpr);
+
+                    /*///*/
+                    GRBVar slack = modello.addVar(0.0, GRB.INFINITY, 0.0, GRB.CONTINUOUS, "slack" + c.get(GRB.StringAttr.ConstrName));
+                    //GRBLinExpr penalty = new GRBLinExpr();
+                    //penalty.addTerm(500, slack);
+                    GRBLinExpr linExprDelConstr = modello.getRow(c);
+                    linExprDelConstr.addTerm(1, slack);
+
+                    modello.addConstr(linExprDelConstr, c.get(GRB.CharAttr.Sense), c.get(GRB.DoubleAttr.RHS), "penalty" + c.get(GRB.StringAttr.ConstrName));
+                    System.out.println("aggiunto vincolo con slack: " + "penalty" + c.get(GRB.StringAttr.ConstrName));
+
+
+
+
+
+                    funObjAusiliaria.addTerm(500,slack);
+                    System.out.println("aggiungo in fun obj +500 * slack corrente");
+
+                    //modello.update();
+                    //modello.optimize();
+
+                }
+            }
+            modello.setObjective(funObjAusiliaria);
+            modello.update();
+        } catch (GRBException e) {
+            e.printStackTrace();
+
+        }
+        //modello.feasRelax(0,true,true,true);
+        //modello.optimize();
+
+        //localSearchInfeasible(model,tmin);
 
     }
 
@@ -273,6 +325,47 @@ public class HeuristicSolver {
         modello.update();
         try {
             modello.optimize();
+
+            modello.computeIIS();
+            GRBConstr[] iisConstraints = modello.getConstrs();
+            for (GRBConstr c : iisConstraints) {
+                if (c.get(GRB.IntAttr.IISConstr) == 1) {
+                    System.out.println("vincolo infeasible violato: " + c.get(GRB.StringAttr.ConstrName));
+                    GRBLinExpr penaltyTerm = new GRBLinExpr();
+
+                    GRBLinExpr constraintExpr = modello.getRow(c);
+                    penaltyTerm.add(constraintExpr);
+
+                    /*///*/
+                    GRBVar slack = modello.addVar(0.0, GRB.INFINITY, 0.0, GRB.CONTINUOUS, "slack" + c.get(GRB.StringAttr.ConstrName));
+                    //GRBLinExpr penalty = new GRBLinExpr();
+                    //penalty.addTerm(500, slack);
+                    GRBLinExpr linExprDelConstr = modello.getRow(c);
+                    linExprDelConstr.addTerm(1, slack);
+
+                    modello.addConstr(linExprDelConstr, GRB.LESS_EQUAL, c.get(GRB.DoubleAttr.RHS), "penalty" + c.get(GRB.StringAttr.ConstrName));
+                    System.out.println("aggiunto vincolo con slack: " + "penalty" + c.get(GRB.StringAttr.ConstrName));
+                    modello.update();
+                    modello.optimize();
+
+
+
+                    // Add the penalty term to the objective function
+                    //modello.setObjective(modello.);
+                }
+
+
+            /*GRBLinExpr penaltyTerm = new GRBLinExpr();
+            penaltyTerm.addTerm(penalty, constraintExpr);
+
+            // Add the penalty term to the objective function
+            modello.setObjective(model.getObjective().add(penaltyTerm));
+                   }
+
+             */
+            }
+
+
 
         } catch (GRBException e) {
             e.printStackTrace();

@@ -182,7 +182,7 @@ public class ETPmodel{
         double bestSolution=100000;
         //HeuristicSolver.calcolaSoluzioneIniziale(this);
         HeuristicSolver.provaSoluzioneIniziale(this);
-        try {
+        /*try {
             model.optimize();
             Solution=this.getObjValue();
         } catch (GRBException e) {
@@ -252,6 +252,10 @@ public class ETPmodel{
         //this.stampaVariabiliY(this.getIstanza().getEsami(), this.getIstanza().getLunghezzaExaminationPeriod());
         //this.stampaVariabiliU(this.getIstanza().getEsami(), this.getIstanza().getConflitti(), this.getiSlot());
         //Utility.stampaTabConflitti(istanza.getConflitti());
+
+        
+        */
+
 
     }
 
