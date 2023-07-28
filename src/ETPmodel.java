@@ -176,13 +176,16 @@ public class ETPmodel{
     }
 
     public void heurSolve() throws GRBException {
-        int numeroIterazioni = 50;
+        int numeroIterazioni = 10;
         int counterIterazioni = 0;
         double Solution=0;
         double bestSolution=100000;
         //HeuristicSolver.calcolaSoluzioneIniziale(this);
         HeuristicSolver.provaSoluzioneIniziale(this);
-        /*try {
+        
+
+
+        try {
             model.optimize();
             Solution=this.getObjValue();
         } catch (GRBException e) {
@@ -200,9 +203,9 @@ public class ETPmodel{
         double nreset=5;
         double alfa = 0.9;
         int counterSimulated=0;
-        double iterzioniSimulated=30;
+        double iterzioniSimulated=10;
 
-        for(int i=0;i<3;i++) {
+        for(int i=0;i<10;i++) {
             counterIterazioni=0;
             do {
 
@@ -210,6 +213,10 @@ public class ETPmodel{
                 counterIterazioni++;
 
             } while (numeroIterazioni > counterIterazioni);
+
+            if (Solution < bestSolution) {
+                bestSolution = Solution;
+            }
 
             this.solve();
 
@@ -253,8 +260,10 @@ public class ETPmodel{
         //this.stampaVariabiliU(this.getIstanza().getEsami(), this.getIstanza().getConflitti(), this.getiSlot());
         //Utility.stampaTabConflitti(istanza.getConflitti());
 
-        
-        */
+
+
+
+
 
 
     }
