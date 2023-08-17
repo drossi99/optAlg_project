@@ -1,3 +1,4 @@
+import gurobi.GRB;
 import gurobi.GRBException;
 
 import java.util.*;
@@ -15,8 +16,7 @@ public class Main{
         studenti = LetturaFile.leggiStu(".\\instance\\test.stu", esami);*/
 
         //System.out.println(T);
-        String t="instance07";
-        
+        String t="instance02";
         Istanza istanza = new Istanza("src/instance/"+t+".exm", "src/instance/"+t+".slo", "src/instance/"+t+".stu");
         ETPmodel model = new ETPmodel(istanza, 5);
 

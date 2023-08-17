@@ -176,22 +176,245 @@ public class ETPmodel{
     }
 
     public void heurSolve() throws GRBException {
-        int numeroIterazioni = 10;
-        int counterIterazioni = 0;
-        double Solution=0;
-        double bestSolution=100000;
+
         //HeuristicSolver.calcolaSoluzioneIniziale(this);
-        HeuristicSolver.provaSoluzioneIniziale(this);
-        
 
+        //test ciclo per topConsiderare=5 ripetizioni 50 ordine(decrescente) ma fatto su ultimo ordinamento
+/*
+        int i=0;
 
-        try {
-            model.optimize();
-            Solution=this.getObjValue();
-        } catch (GRBException e) {
-            e.printStackTrace();
+        double media_tempo=0;
+        int media_iterazioni=0;
+        int contatoreFallimenti=0;
+        for(i=0;i<30;i++) {
+            long start = System.nanoTime();
+
+            int n_iteraz = HeuristicSolver.provaSoluzioneIniziale(this);
+
+            if(n_iteraz>=50){
+                contatoreFallimenti++;
+            }
+
+            long end = System.nanoTime();
+            double durata_esec = (end - start) / Math.pow(10, 9);
+            System.out.println("i=" +i+"Elapsed Time in seconds: " + durata_esec);
+            System.out.println("i=" +i+"iterations: " + n_iteraz);
+
+            media_tempo += durata_esec;
+            media_iterazioni += n_iteraz;
         }
 
+        System.out.println(i);
+        media_tempo = media_tempo / i;
+        media_iterazioni = media_iterazioni / i;
+
+        System.out.println("\ndurata media:" + media_tempo);
+        System.out.println("n-iterazioni medio:" + media_iterazioni);
+        System.out.println("contatore fallimenti:" + contatoreFallimenti);
+
+    */
+        
+        /*
+        //test 3 ordinamneto random per esami
+        int i=0;
+        ArrayList<Double> contatore=new ArrayList<>(0);
+
+        double media_tempo=0;
+        double media_tempo_gurobi=0;
+        int media_iterazioni_migliore=0;
+        int media_iterazioni_eseguite=0;
+        for(i=0;i<3;i++) {
+            contatore.clear();
+            long start = System.nanoTime();
+            int iterazione = HeuristicSolver.provaSoluzioneIniziale3(this,contatore);
+            long end = System.nanoTime();
+            double durata_esec = (end - start) / Math.pow(10, 9);
+
+            System.out.println("i=" +(i+1)+"Elapsed Time in seconds: " + durata_esec);
+            System.out.println("i=" +(i+1)+"iteratione istanza migliore: " + iterazione);
+            System.out.println("i=" +(i+1)+"iteratione eseguite dal metodo: " + contatore.get(1));
+            System.out.println("i=" +(i+1)+"Elapsed Time in seconds for gurobi: " + contatore.get(0));
+
+            media_tempo += durata_esec;
+            media_tempo_gurobi += contatore.get(0);
+            media_iterazioni_migliore += iterazione;
+            media_iterazioni_eseguite += contatore.get(1);
+        }
+        
+         
+
+        System.out.println(i);
+        media_tempo = media_tempo / i;
+        media_tempo_gurobi = media_tempo_gurobi/i;
+        media_iterazioni_migliore = media_iterazioni_migliore / i;
+        media_iterazioni_eseguite = media_iterazioni_eseguite /i;
+
+        System.out.println("durata media:" + media_tempo);
+        System.out.println("durata media gurobi:" + media_tempo_gurobi);
+        System.out.println("media iterazione istanza migliore:" + media_iterazioni_migliore);
+        System.out.println("media iterazioni eseguite:" + media_iterazioni_eseguite);
+        
+         
+         
+         */
+
+
+        
+        //test 2 ordine decresscente + tabu/gurobi
+        double media_tempo_tot=0;
+        double media_tempo_gurobi=0;
+        double tempo_prima_es_gurobi=0;
+        int i;
+        for(i=0;i<1;i++) {
+            long start = System.nanoTime();
+            double tempo_gurobi=HeuristicSolver.provaSoluzioneIniziale2(this);
+            long end = System.nanoTime();
+            double durata_esec_tot = (end - start) / Math.pow(10, 9);
+            if(i==0){
+                tempo_prima_es_gurobi=tempo_gurobi;
+                System.out.println("i=" + (i) + "Elapsed Time in seconds of provaSoluzioneIniziale: " + durata_esec_tot);
+                System.out.println("i=" + (i) + "Elapsed Time in seconds of gurobi: " + tempo_gurobi);
+            }else {
+                System.out.println("i=" + (i) + "Elapsed Time in seconds of provaSoluzioneIniziale: " + durata_esec_tot);
+                System.out.println("i=" + (i) + "Elapsed Time in seconds of gurobi: " + tempo_gurobi);
+
+                media_tempo_tot += durata_esec_tot;
+                media_tempo_gurobi += tempo_gurobi;
+            }
+        }
+
+        System.out.println(i);
+        media_tempo_tot = media_tempo_tot / (i-1);
+        media_tempo_gurobi = media_tempo_gurobi / (i-1);
+
+        System.out.println("\ndurata media totale:" + media_tempo_tot);
+        System.out.println("durata media gurobi:" + media_tempo_gurobi);
+        System.out.println("tempo inizializzazione del modello alla prima esecuzione = "+(tempo_prima_es_gurobi-media_tempo_gurobi));
+
+
+
+        //test LS solo
+
+        //model.optimize();
+        //int numeroIterazioniLS = 30;
+        int counterIterazioniLS = 0;
+        int counterCambiambiamentiSol=0;
+        double Solution=0;
+        double bestSolution=100000;
+        double soluzione_iniziale=0;
+        Solution=this.getObjValue();
+        bestSolution=Solution;
+        soluzione_iniziale=Solution;
+        double timelimit=30.0;
+        double durata_esec1=0.0;
+        ArrayList<Integer> esamiLiberi=new ArrayList<>();
+        ArrayList<Double> tempi=new ArrayList<>();
+
+        long start1 = System.nanoTime();
+        do {
+
+            Solution = HeuristicSolver.improvingLocalSearch(this, Solution, esamiLiberi, tempi);
+            counterIterazioniLS++;
+
+            if (Solution < bestSolution) {
+                counterCambiambiamentiSol++;
+                bestSolution = Solution;
+            }
+
+            long end1 = System.nanoTime();
+            durata_esec1 = (end1 - start1) / Math.pow(10, 9);
+
+
+        } while (durata_esec1 < timelimit);
+
+        System.out.println("soluzione iniziale: "+soluzione_iniziale);
+        System.out.println("soluzione migliore: "+bestSolution);
+        System.out.println("miglioramento soluzione: "+(soluzione_iniziale-bestSolution));
+        System.out.println("numero di iterazioni eseguite: "+counterIterazioniLS+" in "+durata_esec1+ " secondi");
+        System.out.println("numero cambiamenti di soluzione: "+counterCambiambiamentiSol);
+
+
+
+        double[] tmp = tempi.stream().mapToDouble(Double::doubleValue).toArray();
+        double[][] plot_y = new double[][] { tmp};
+
+        String[] plot_x = esamiLiberi.stream().map(e -> e.toString()).toArray(String[]::new);
+
+        Plot.plot("titolo", "N_easmi_liberi", "Tempi in secondi", plot_x, plot_y, "out.PNG", 2400, 800);
+
+
+
+        /*
+
+        //test SA solo
+        double temperatura0=20000;
+        double temperatura=temperatura0;
+        int j=0;
+        double nreset=5;
+        double alfa = 0.9;
+        int counterSimulated=0;
+        int counterReset=0;
+        double iterzioniSimulated=10;
+        double Solution=0;
+        double bestSolution=100000;
+        double soluzione_iniziale=0;
+        double timelimit=60.0;
+        double durata_esec1=0.0;
+        ArrayList<Integer> contatore=new ArrayList<>();
+        //ArrayList<Integer> esamiLiberi=new ArrayList<>();
+        //ArrayList<Double> tempi=new ArrayList<>();
+
+        soluzione_iniziale=this.getObjValue();
+        Solution=soluzione_iniziale;
+        bestSolution=Solution;
+
+        long start1 = System.nanoTime();
+        do {
+            Solution = HeuristicSolver.improvingWithSimulatedAnnealing(this, temperatura, contatore);
+            //Solution = HeuristicSolver.improvingWithGreatDeluge(this);
+            if (Solution < bestSolution) {
+                bestSolution = Solution;
+            }
+            //Cooling Schedules
+            //temperatura = temperatura * alfa;   //test 1 alfa=0.9
+            //temperatura = temperatura0 * Math.pow(alfa, counterSimulated);   //test 2 alfa=0.9
+            temperatura = temperatura / (1 + 500 * temperatura); //test 3
+
+            if (temperatura < 0.0001) {
+                counterReset++;
+                temperatura = temperatura0;
+                j++;
+                if (j > nreset) {
+                    j = 0;
+                    temperatura0 = temperatura0 * 2.5;
+                    nreset += 0.05;
+                    iterzioniSimulated += (iterzioniSimulated / 5);
+                }
+            }
+
+            System.out.println();
+            System.out.println("la soluzione attuale è: " + Solution);
+            System.out.println();
+
+            counterSimulated++;
+
+            long end1 = System.nanoTime();
+            durata_esec1 = (end1 - start1) / Math.pow(10, 9);
+        } while (durata_esec1 < timelimit);
+
+        System.out.println("soluzione iniziale: "+soluzione_iniziale);
+        System.out.println("soluzione migliore: "+bestSolution);
+        System.out.println("miglioramento soluzione: "+(soluzione_iniziale-bestSolution));
+        System.out.println("numero di iterazioni eseguite: "+counterSimulated+" in "+durata_esec1+ " secondi");
+        System.out.println("numero reset tempertura: "+counterReset);
+        System.out.println("numero vere iterazioni: "+ contatore.size());
+
+
+
+         */
+
+
+        /*
 
 
         System.out.println();System.out.println();
@@ -205,7 +428,9 @@ public class ETPmodel{
         int counterSimulated=0;
         double iterzioniSimulated=10;
 
-        for(int i=0;i<10;i++) {
+        long start1 = System.nanoTime();
+
+        for(int k=0;k<10;k++) {
             counterIterazioni=0;
             do {
 
@@ -231,8 +456,12 @@ public class ETPmodel{
                 if (Solution < bestSolution) {
                     bestSolution = Solution;
                 }
-                //temperatura = temperatura * alfa;
-                temperatura = temperatura / (1 + 500 * temperatura);
+
+                //Cooling Schedules
+                //temperatura = temperatura * alfa;   //test 1 alfa=0.9
+                //temperatura = temperatura0 * Math.pow(alfa, counterSimulated);   //test 2 alfa=0.9
+                temperatura = temperatura / (1 + 500 * temperatura); //test 3
+
 
                 if (temperatura < 0.0001) {
                     temperatura = temperatura0;
@@ -249,10 +478,19 @@ public class ETPmodel{
                 System.out.println("la soluzione attuale è: " + Solution);
                 System.out.println();
                 counterSimulated++;
+
+
             } while (counterSimulated < iterzioniSimulated);
+
+            long end1 = System.nanoTime();
+            double durata_esec1 = (end1 - start1) / Math.pow(10, 9);
+            System.out.println("il tempo di esecuzione del "+(k+1)+" ciclo fatto di "+numeroIterazioni+" iterazioni " +
+                    "di LS e di"+iterzioniSimulated+" iterazioni di SA è di :" +durata_esec1);
+            if(durata_esec1>60 ){
+                break;
+            }
+
         }
-
-
 
         System.out.println("la soluzione migliore è: "+bestSolution);
 
@@ -260,12 +498,7 @@ public class ETPmodel{
         //this.stampaVariabiliU(this.getIstanza().getEsami(), this.getIstanza().getConflitti(), this.getiSlot());
         //Utility.stampaTabConflitti(istanza.getConflitti());
 
-
-
-
-
-
-
+         */
     }
 
     public void dispose() {
