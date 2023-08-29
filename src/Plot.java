@@ -13,10 +13,10 @@ import java.io.IOException;
 
 public class Plot {
 
-        public static void plot(String title, String xAxisTitle, String yAxisTitle, String[] x_values_labels, double[][] y_values, String outFilePath, int x_size, int y_size){
+        public static void plot(String title, String xAxisTitle, String yAxisTitle, String[] x_values_labels, double[][] y_values,
+                        String outFilePath, int x_size, int y_size, int y_min_val, int y_num_labels){
 
             DataSeries dataSeries = new DataSeries( x_values_labels, xAxisTitle, yAxisTitle, title );
-
             String[] legendLabels= { "Bugs" };//Legenda colori
 
             //Stile disegno
@@ -25,7 +25,6 @@ public class Plot {
             Shape[] shapes= { PointChartProperties.SHAPE_CIRCLE };
             LineChartProperties lineChartProperties= new LineChartProperties( strokes, shapes );
 
-            //
             AxisChartDataSet axisChartDataSet= null;
             try {
                 axisChartDataSet = new AxisChartDataSet( y_values, legendLabels, paints, ChartType.LINE, lineChartProperties );
@@ -34,8 +33,20 @@ public class Plot {
             }
             dataSeries.addIAxisPlotDataSet( axisChartDataSet );
 
-            AxisChart axisChart= new AxisChart( dataSeries, new ChartProperties(), new AxisProperties(), new LegendProperties(), x_size, y_size );
+            //Asse y
+            AxisProperties axisProperties= new AxisProperties();
+            DataAxisProperties dataAxisProperties= (DataAxisProperties) axisProperties.getYAxisProperties();
+            try {
+                dataAxisProperties.setUserDefinedScale( y_min_val, 1 );//val min asse y, val incrementi
+            } catch (PropertyException e) {
+                throw new RuntimeException(e);
+            }
+            dataAxisProperties.setRoundToNearest( 0 );//potenza di 10
+            dataAxisProperties.setNumItems( y_num_labels );//numero val asse y, default=5
 
+
+//          AxisChart axisChart= new AxisChart( dataSeries, new ChartProperties(), axisProperties, new LegendProperties(), x_size, y_size );
+            AxisChart axisChart= new AxisChart( dataSeries, new ChartProperties(), axisProperties, null, x_size, y_size );
 
             // Salva su file
             FileOutputStream fout = null;

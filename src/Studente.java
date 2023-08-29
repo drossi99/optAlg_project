@@ -19,7 +19,6 @@ public class Studente {
     public void setEsami(ArrayList<Integer> esami) {
         this.esami = esami;
     }
-
     public void addEsame(Integer esame){
         esami.add(esame);
     }

@@ -1,40 +1,20 @@
-import gurobi.GRB;
 import gurobi.GRBException;
-
-import java.util.*;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 
-
 public class Main{
-    /*static ArrayList<Esame> esami = null;
-    static int T;
-    static A modello.setObjective(funObjAusiliaria);rrayList<Studente> studenti = null;*/
     public static void main(String []args) throws FileNotFoundException, IOException, GRBException {
-        /*esami = LetturaFile.leggiExm(".\\instance\\test.exm");
-        T = LetturaFile.leggiSlo(".\\instance\\test.slo");
-        studenti = LetturaFile.leggiStu(".\\instance\\test.stu", esami);*/
-
-        //System.out.println(T);
-        String t="instance02";
+        String t="instance08";  //selezione instanza da eseguire
+        long start = System.nanoTime();
         Istanza istanza = new Istanza("src/instance/"+t+".exm", "src/instance/"+t+".slo", "src/instance/"+t+".stu");
         ETPmodel model = new ETPmodel(istanza, 5);
-
         model.buildModel();
-        model.getModel().write("modello.lp");
+        //model.getModel().write("modello.lp");
+        long end = System.nanoTime();
+        double durata_esec = (end - start) / Math.pow(10, 9);
 		//model.solve();
         model.heurSolve();
-        //model.rilassato();
-
-
-		//model.stampaVariabiliY(istanza.getEsami(),istanza.getLunghezzaExaminationPeriod());
-		//model.stampaVariabiliU(istanza.getEsami(), istanza.getConflitti(), 5);
-        //Utility.stampaTabConflitti(istanza.getConflitti());
-
-
-
-
-
+        System.out.println("creation time of the model in seconds: " + durata_esec);  //tempo di lettura dei file + creazione modello
     }
 
 }

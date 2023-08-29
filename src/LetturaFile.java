@@ -6,49 +6,27 @@ import java.util.ArrayList;
 
 
 public class LetturaFile {
-    /*public static void main(String []args) throws FileNotFoundException, IOException {
-    
-    BufferedReader reader3 = new BufferedReader(new FileReader(".\\instance\\instance01.stu"));
-    String line3 = reader3.readLine();
-        while(line3!=null) {
-            System.out.println(line3);
-            line3 = reader3.readLine();
-        }
-        
-    }*/
 
     public static ArrayList<Esame> leggiExm(String path) throws FileNotFoundException, IOException {
         ArrayList<Esame> esami = new ArrayList<Esame>();
         BufferedReader reader1 = new BufferedReader(new FileReader(path));
         String line1 = reader1.readLine();
         while(line1!=null && !line1.isBlank()) {
-            
             String[] splitted =line1.split(" ");
-            /*
-            for (int i=0; i<splitted.length; i++){
-                System.out.println(splitted[i]);
-            }*/
-            
             int utenti = Integer.parseInt(splitted[1]);
             int id = Integer.parseInt(splitted[0]);
-            
-            
             esami.add( new Esame(id, utenti));
-
             line1 = reader1.readLine();
-            
         }
         reader1.close();
         return esami;
     }
-
     public static int leggiSlo(String path) throws FileNotFoundException, IOException {
         BufferedReader reader = new BufferedReader(new FileReader(path));
         String line = reader.readLine();
         reader.close();
         return Integer.parseInt(line);
     }
-
     //Da chiamare dopo leggiEXM
     public static ArrayList<Studente> leggiStu(String path, ArrayList<Esame> esami) throws FileNotFoundException, IOException{
          BufferedReader reader = new BufferedReader(new FileReader(path));
@@ -67,25 +45,19 @@ public class LetturaFile {
                     s.addEsame(idEsame);
                     e.addStudente(s);
                 }
-                
             }
-
             if(!esiste){
                 Studente studente = new Studente(nomeStudente, new ArrayList<Integer>());
                 studente.addEsame(idEsame);
                 studenti.add(studente);
                 e.addStudente(studente);
-            } 
-
+            }
             esiste=false;
             line = reader.readLine();
-            
-            
         }
         reader.close();
         return studenti;
     }
-
     public static Esame getEsame(ArrayList<Esame> esami, int idEsame){
         for (Esame e: esami){
             if(e.getId()==idEsame) return e;
