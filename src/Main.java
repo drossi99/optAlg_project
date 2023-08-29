@@ -16,5 +16,4 @@ public class Main{
         model.heurSolve();
         System.out.println("creation time of the model in seconds: " + durata_esec);  //tempo di lettura dei file + creazione modello
     }
-
 }

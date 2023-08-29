@@ -350,6 +350,7 @@ public class HeuristicSolver {
             modello.update();
         } catch (GRBException e) {
             e.printStackTrace();
+            System.exit(0); //fermo programma se gurobi riporta soluzione infeasble (succede a volte se c'è solo un esame extra fuori in alcune istanze)
         }
     }
 
